@@ -1,4 +1,4 @@
-﻿using DesignAlternatives.WinApp.Models;
+﻿using DesignAlternatives.WinApp.DataAccess;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,22 +11,19 @@ using System.Windows.Forms;
 
 namespace DesignAlternatives.WinApp
 {
-    public partial class frmMain : Form
+    public partial class frmSettings : Form
     {
+        private readonly DesignAlternativesDb designAlternativesDb;
 
-        public frmMain()
+        public frmSettings()
         {
             InitializeComponent();
+            designAlternativesDb = new DesignAlternativesDb();
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
+        private void frmSettings_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-            new frmSettings().ShowDialog();
         }
     }
 }
