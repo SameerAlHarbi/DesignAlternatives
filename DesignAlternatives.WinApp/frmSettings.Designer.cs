@@ -29,53 +29,41 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.subCategoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.designOptionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.categoryDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.subCategoriesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.designOptionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoryDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // subCategoriesBindingSource
+            // 
+            this.subCategoriesBindingSource.DataMember = "SubCategories";
+            this.subCategoriesBindingSource.DataSource = this.categoryBindingSource;
+            // 
+            // designOptionsBindingSource
+            // 
+            this.designOptionsBindingSource.DataMember = "designOptions";
+            this.designOptionsBindingSource.DataSource = this.subCategoriesBindingSource;
             // 
             // categoryBindingSource
             // 
             this.categoryBindingSource.DataSource = typeof(DesignAlternatives.WinApp.Models.Category);
             // 
-            // categoryDataGridView
-            // 
-            this.categoryDataGridView.AllowUserToAddRows = false;
-            this.categoryDataGridView.AllowUserToDeleteRows = false;
-            this.categoryDataGridView.AutoGenerateColumns = false;
-            this.categoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.categoryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2});
-            this.categoryDataGridView.DataSource = this.categoryBindingSource;
-            this.categoryDataGridView.Location = new System.Drawing.Point(22, 12);
-            this.categoryDataGridView.Name = "categoryDataGridView";
-            this.categoryDataGridView.ReadOnly = true;
-            this.categoryDataGridView.Size = new System.Drawing.Size(300, 166);
-            this.categoryDataGridView.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
             // frmSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1142, 697);
-            this.Controls.Add(this.categoryDataGridView);
+            this.ClientSize = new System.Drawing.Size(963, 644);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmSettings";
+            this.Text = "Settings";
             this.Load += new System.EventHandler(this.frmSettings_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.subCategoriesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.designOptionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoryDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,7 +71,7 @@
         #endregion
 
         private System.Windows.Forms.BindingSource categoryBindingSource;
-        private System.Windows.Forms.DataGridView categoryDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.BindingSource subCategoriesBindingSource;
+        private System.Windows.Forms.BindingSource designOptionsBindingSource;
     }
 }

@@ -1,8 +1,10 @@
 ﻿using DesignAlternatives.WinApp.DataAccess;
+using DesignAlternatives.WinApp.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,9 +23,9 @@ namespace DesignAlternatives.WinApp
             designAlternativesDb = new DesignAlternativesDb();
         }
 
-        private void frmSettings_Load(object sender, EventArgs e)
+        private async void frmSettings_Load(object sender, EventArgs e)
         {
-
+            categoryBindingSource.DataSource = await designAlternativesDb.Categories.Include(c => c.SubCategories).ToListAsync();
         }
     }
 }
