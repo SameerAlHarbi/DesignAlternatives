@@ -40,6 +40,6 @@
 
         public decimal Aesthetics { get; set; }
 
-        public decimal Sum => Accessibility + Relation + Size + Cost + Time + Energy + Maintenance;
+        public decimal Sum => Accessibility + Relation + Size + Cost + Time + Energy + Maintenance + Aesthetics;
     }
 }
