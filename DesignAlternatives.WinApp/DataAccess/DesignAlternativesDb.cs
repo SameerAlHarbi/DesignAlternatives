@@ -8,5 +8,7 @@ namespace DesignAlternatives.WinApp.DataAccess
         public DbSet<Category> Categories { get; set; }
         public DbSet<SubCategory> SubCategories { get; set; }
         public DbSet<DesignOption> DesignOptions { get; set; }
+
+        public DbSet<DesignAlternative> DesignAlternatives { get; set; }
     }
 }

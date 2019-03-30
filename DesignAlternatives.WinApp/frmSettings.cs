@@ -46,7 +46,7 @@ namespace DesignAlternatives.WinApp
                     {
                         new SubCategory
                         {
-                            Name = "Related to Wind",
+                            Name = "Related To Wind",
                             designOptions = new List<DesignOption>
                             {
                                 new DesignOption
@@ -77,7 +77,7 @@ namespace DesignAlternatives.WinApp
                         },
                         new SubCategory
                         {
-                            Name = "Related to View",
+                            Name = "Related To View",
                             designOptions = new List<DesignOption>
                             {
                                 new DesignOption
@@ -528,15 +528,39 @@ namespace DesignAlternatives.WinApp
                             {
                                 new DesignOption
                                 {
-                                    Name="Simple Shape (1-Panel)"
+                                    Name="Simple Shape (1-Panel)",
+                                    Accessibility=0.30m,
+                                    Relation=0.10m,
+                                    Size=0.30m,
+                                    Cost=0.90m,
+                                    Time=0.70m,
+                                    Energy=0.50m,
+                                    Maintenance = 0.70m,
+                                    Aesthetics = 0.50m
                                 },
                                 new DesignOption
                                 {
-                                    Name="Normal Shape (2-Panels)"
+                                    Name="Normal Shape (2-Panels)",
+                                    Accessibility=-0.10m,
+                                    Relation=-0.10m,
+                                    Size=-0.10m,
+                                    Cost=-0.70m,
+                                    Time=-0.50m,
+                                    Energy=0.70m,
+                                    Maintenance = -0.50m,
+                                    Aesthetics = 0.70m
                                 },
                                 new DesignOption
                                 {
-                                    Name="Complex Shape (3-Panels)"
+                                    Name="Complex Shape (3-Panels)",
+                                    Accessibility=-0.30m,
+                                    Relation=-0.30m,
+                                    Size=-0.30m,
+                                    Cost=-0.90m,
+                                    Time=-0.70m,
+                                    Energy=0.90m,
+                                    Maintenance = -0.70m,
+                                    Aesthetics = 0.90m
                                 }
                             }
                         }
@@ -554,15 +578,39 @@ namespace DesignAlternatives.WinApp
                             {
                                 new DesignOption
                                 {
-                                    Name="Short (<4.50m)"
+                                    Name="Short (<4.50m)",
+                                    Accessibility=-0.30m,
+                                    Relation=-0.30m,
+                                    Size=-0.50m,
+                                    Cost=0.50m,
+                                    Time=0.70m,
+                                    Energy=0.70m,
+                                    Maintenance = 0.70m,
+                                    Aesthetics = -0.50m
                                 },
                                 new DesignOption
                                 {
-                                    Name="Medium (4.50-6.50m)"
+                                    Name="Medium (4.50-6.50m)",
+                                    Accessibility=0.50m,
+                                    Relation=0.70m,
+                                    Size=0.70m,
+                                    Cost=0.70m,
+                                    Time=0.50m,
+                                    Energy=0.50m,
+                                    Maintenance = 0.50m,
+                                    Aesthetics = 0.70m
                                 },
                                 new DesignOption
                                 {
-                                    Name="Long (>6.50m)"
+                                    Name="Long (>6.50m)",
+                                    Accessibility=0.70m,
+                                    Relation=0.50m,
+                                    Size=-0.30m,
+                                    Cost=-0.50m,
+                                    Time=-0.50m,
+                                    Energy=-0.70m,
+                                    Maintenance = -0.50m,
+                                    Aesthetics = 0.90m
                                 }
                             }
                         }
@@ -580,15 +628,39 @@ namespace DesignAlternatives.WinApp
                             {
                                 new DesignOption
                                 {
-                                    Name="Low (<15%)"
+                                    Name="Low (<15%)",
+                                    Accessibility=-0.90m,
+                                    Relation=-0.70m,
+                                    Size=0.70m,
+                                    Cost=0.50m,
+                                    Time=0.70m,
+                                    Energy=0.70m,
+                                    Maintenance = 0.70m,
+                                    Aesthetics = -0.50m
                                 },
                                 new DesignOption
                                 {
-                                    Name="Normal (15-25%)"
+                                    Name="Normal (15-25%)",
+                                    Accessibility=0.70m,
+                                    Relation=0.50m,
+                                    Size=0.50m,
+                                    Cost=0.30m,
+                                    Time=0.50m,
+                                    Energy=-0.50m,
+                                    Maintenance = -0.50m,
+                                    Aesthetics = 0.50m
                                 },
                                 new DesignOption
                                 {
-                                    Name="High (>25%)"
+                                    Name="High (>25%)",
+                                    Accessibility=0.90m,
+                                    Relation=0.70m,
+                                    Size=-0.70m,
+                                    Cost=-0.70m,
+                                    Time=-0.70m,
+                                    Energy=-0.90m,
+                                    Maintenance = -0.70m,
+                                    Aesthetics = 0.70m
                                 }
                             }
                         }
@@ -598,7 +670,10 @@ namespace DesignAlternatives.WinApp
 
             try
             {
+                var allDesignAlternatives = await designAlternativesDb.DesignAlternatives.ToListAsync();
                 var currentCategories = await designAlternativesDb.Categories.Include(c => c.SubCategories.Select(s => s.designOptions)).ToListAsync();
+
+                designAlternativesDb.DesignAlternatives.RemoveRange(allDesignAlternatives);
                 designAlternativesDb.Categories.RemoveRange(currentCategories);
 
                 designAlternativesDb.Categories.AddRange(categories);
