@@ -68,10 +68,16 @@ namespace DesignAlternatives.WinApp.Models
         public decimal AccessibilityResult => AccessibilityTotal * 0.102m;
 
         [NotMapped]
+        public decimal AccessibilityPercentage { get; set; }
+
+        [NotMapped]
         public decimal RelationTotal => DesignOptionsList.Sum(d => d.Relation);
 
         [NotMapped]
         public decimal RelationResult => RelationTotal * 0.106m;
+
+        [NotMapped]
+        public decimal RelationPercentage { get; set; }
 
         [NotMapped]
         public decimal SizeTotal => DesignOptionsList.Sum(d => d.Size);
@@ -80,10 +86,16 @@ namespace DesignAlternatives.WinApp.Models
         public decimal SizeResult => SizeTotal * 0.116m;
 
         [NotMapped]
+        public decimal SizePercentage { get; set; }
+
+        [NotMapped]
         public decimal CostTotal => DesignOptionsList.Sum(d => d.Cost);
 
         [NotMapped]
         public decimal CostResult => CostTotal * 0.140m;
+
+        [NotMapped]
+        public decimal CostPercentage { get; set; }
 
         [NotMapped]
         public decimal TimeTotal => DesignOptionsList.Sum(d => d.Time);
@@ -92,10 +104,16 @@ namespace DesignAlternatives.WinApp.Models
         public decimal TimeResult => TimeTotal * 0.131m;
 
         [NotMapped]
+        public decimal TimePercentage { get; set; }
+
+        [NotMapped]
         public decimal EnergyTotal => DesignOptionsList.Sum(d => d.Energy);
 
         [NotMapped]
         public decimal EnergyResult => EnergyTotal * 0.143m;
+
+        [NotMapped]
+        public decimal EnergyPercentage { get; set; }
 
         [NotMapped]
         public decimal MaintenanceTotal => DesignOptionsList.Sum(d => d.Maintenance);
@@ -104,10 +122,16 @@ namespace DesignAlternatives.WinApp.Models
         public decimal MaintenanceResult => MaintenanceTotal * 0.127m;
 
         [NotMapped]
+        public decimal MaintenancePercentage { get; set; }
+
+        [NotMapped]
         public decimal AestheticsTotal => DesignOptionsList.Sum(d => d.Aesthetics);
 
         [NotMapped]
         public decimal AestheticsResult => AestheticsTotal * 0.135m;
+
+        [NotMapped]
+        public decimal AestheticsPercentage { get; set; }
 
         [NotMapped]
         public decimal Score => AccessibilityResult + RelationResult + SizeResult
@@ -121,5 +145,24 @@ namespace DesignAlternatives.WinApp.Models
 
         [NotMapped]
         public decimal Rank { get; set; }
+
+        [NotMapped]
+        public decimal SpaceFunctionalityTotal => AccessibilityTotal + RelationTotal + SizeTotal;
+
+        [NotMapped]
+        public decimal SpaceFunctionalityPercentage { get; set; }
+
+        [NotMapped]
+        public decimal ConstructionPerformanceTotal => CostTotal + TimeTotal;
+
+        [NotMapped]
+        public decimal ConstructionPerformancePercentage { get; set; }
+
+        [NotMapped]
+        public decimal OperationPerformanceTotal => EnergyTotal + MaintenanceTotal;
+
+        [NotMapped]
+        public decimal OperationPerformancePercentage { get; set; }
+
     }
 }

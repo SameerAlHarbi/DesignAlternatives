@@ -85,6 +85,15 @@ namespace DesignAlternatives.WinApp
 
                 var totalScores = allDesignAlternatives.Sum(d => d.Score);
 
+                 var totalSpaceFunctionalities = allDesignAlternatives.Sum(d => d.SpaceFunctionalityTotal);
+                 var totalConstructionsPerformances = allDesignAlternatives.Sum(d => d.ConstructionPerformanceTotal);
+                 var totalOperationPerformances = allDesignAlternatives.Sum(d => d.OperationPerformanceTotal);
+                 var totalAestheticses = allDesignAlternatives.Sum(d => d.AestheticsTotal);
+
+                var totalAccessibilities = allDesignAlternatives.Sum(d => d.AccessibilityTotal);
+                //TODO:Continue
+
+
                 if (totalScores > 0)
                 {
                     int rank = 1;
@@ -92,6 +101,18 @@ namespace DesignAlternatives.WinApp
                     {
                         designAlternative.Rank = rank++;
                         designAlternative.Percentage = decimal.Round((designAlternative.Score / totalScores) * 100m, 2, MidpointRounding.AwayFromZero);
+
+                        designAlternative.SpaceFunctionalityPercentage = totalSpaceFunctionalities > 0 ?
+                            decimal.Round((designAlternative.SpaceFunctionalityTotal / totalSpaceFunctionalities) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.ConstructionPerformancePercentage = totalConstructionsPerformances > 0 ?
+                            decimal.Round((designAlternative.ConstructionPerformanceTotal / totalConstructionsPerformances) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.OperationPerformancePercentage = totalOperationPerformances > 0 ?
+                            decimal.Round((designAlternative.OperationPerformanceTotal / totalOperationPerformances) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.AestheticsPercentage = totalAestheticses > 0 ?
+                            decimal.Round((designAlternative.AestheticsTotal / totalAestheticses) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
                     }
                 }
 
