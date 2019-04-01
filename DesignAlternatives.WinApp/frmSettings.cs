@@ -25,7 +25,30 @@ namespace DesignAlternatives.WinApp
 
         private async void frmSettings_Load(object sender, EventArgs e)
         {
-            categoryBindingSource.DataSource = await designAlternativesDb.Categories.Include(c => c.SubCategories.Select(s => s.designOptions)).ToListAsync();
+            var allDesignOptions = new List<Category>();
+
+            try
+            {
+                Cursor = Cursors.WaitCursor;
+                allDesignOptions = await designAlternativesDb.Categories.Include(c => c.SubCategories.Select(s => s.designOptions)).ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Design Alternatives", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Cursor = Cursors.Default;
+                return;
+            }
+
+            Cursor = Cursors.Default;
+
+            if (allDesignOptions.Count < 1)
+            {
+                btnResetDefaults.PerformClick();
+            }
+            else
+            {
+                categoryBindingSource.DataSource = allDesignOptions;
+            }
         }
 
         private async void btnResetDefaults_Click(object sender, EventArgs e)
@@ -37,6 +60,7 @@ namespace DesignAlternatives.WinApp
 
         private async Task initializeConstantsData()
         {
+            Cursor = Cursors.WaitCursor;
             var categories = new List<Category>()
             {
                 new Category
@@ -687,12 +711,24 @@ namespace DesignAlternatives.WinApp
             {
                 MessageBox.Show(ex.Message, "Design Alternatives", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            Cursor = Cursors.Default;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            designAlternativesDb.SaveChanges();
-            MessageBox.Show("Save Successfull", "Design Alternatives", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                Cursor = Cursors.WaitCursor;
+                designAlternativesDb.SaveChanges();
+                MessageBox.Show("Save Successfull", "Design Alternatives", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Design Alternatives", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Cursor = Cursors.Default;
+                return;
+            }
+            Cursor = Cursors.Default;
         }
     }
 }

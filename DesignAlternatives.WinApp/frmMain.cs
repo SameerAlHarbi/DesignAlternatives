@@ -91,8 +91,16 @@ namespace DesignAlternatives.WinApp
                  var totalAestheticses = allDesignAlternatives.Sum(d => d.AestheticsTotal);
 
                 var totalAccessibilities = allDesignAlternatives.Sum(d => d.AccessibilityTotal);
-                //TODO:Continue
+                var totalRelations = allDesignAlternatives.Sum(d => d.RelationTotal);
+                var totalSizes = allDesignAlternatives.Sum(d => d.SizeTotal);
 
+                var totalCost = allDesignAlternatives.Sum(d => d.CostTotal);
+                var totalTime = allDesignAlternatives.Sum(d => d.TimeTotal);
+
+                var totalEnergy = allDesignAlternatives.Sum(d => d.EnergyTotal);
+                var totalMaintenance = allDesignAlternatives.Sum(d => d.MaintenanceTotal);
+
+                var totalAesthetics = allDesignAlternatives.Sum(d => d.AestheticsTotal);
 
                 if (totalScores > 0)
                 {
@@ -113,6 +121,27 @@ namespace DesignAlternatives.WinApp
 
                         designAlternative.AestheticsPercentage = totalAestheticses > 0 ?
                             decimal.Round((designAlternative.AestheticsTotal / totalAestheticses) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.AccessibilityPercentage = totalAccessibilities > 0 ?
+                            decimal.Round((designAlternative.AccessibilityTotal / totalAccessibilities) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.RelationPercentage = totalRelations > 0 ?
+                           decimal.Round((designAlternative.AccessibilityTotal / totalRelations) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.SizePercentage = totalSizes > 0 ?
+                           decimal.Round((designAlternative.SizeTotal / totalSizes) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.CostPercentage = totalCost > 0 ?
+                          decimal.Round((designAlternative.SizeTotal / totalCost) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.TimePercentage = totalTime > 0 ?
+                          decimal.Round((designAlternative.TimeTotal / totalTime) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.EnergyPercentage = totalEnergy > 0 ?
+                          decimal.Round((designAlternative.EnergyTotal / totalEnergy) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.MaintenancePercentage = totalMaintenance > 0 ?
+                          decimal.Round((designAlternative.MaintenanceTotal / totalMaintenance) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
                     }
                 }
 
@@ -160,7 +189,7 @@ namespace DesignAlternatives.WinApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Save Successfull", Settings.Default.AppName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(ex.Message, Settings.Default.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             await refreshData();
