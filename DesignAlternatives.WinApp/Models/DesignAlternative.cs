@@ -10,6 +10,9 @@ namespace DesignAlternatives.WinApp.Models
 
         public string Name { get; set; }
 
+        [NotMapped]
+        public string Description => $"Design {Name}";
+
         public int? RelatedToWindId { get; set; }
 
         public DesignOption RelatedToWind { get; set; }

@@ -14,6 +14,7 @@ namespace DesignAlternatives.WinApp
     public partial class frmMain : Form
     {
         private readonly DesignAlternativesDb designAlternativesDb;
+        private DesignAlternativeResult designAlternativeResult;
 
         public frmMain()
         {
@@ -144,6 +145,9 @@ namespace DesignAlternatives.WinApp
                           decimal.Round((designAlternative.MaintenanceTotal / totalMaintenance) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
                     }
                 }
+                designAlternativeResult = new DesignAlternativeResult(allDesignAlternatives);
+                designAlternativeResultBindingSource.DataSource = designAlternativeResult;
+                designAlternativeResultBindingSource.ResetBindings(false);
 
                 designAlternativeBindingSource.DataSource = allDesignAlternatives;
                 designAlternativeBindingSource.ResetBindings(false);
@@ -175,7 +179,7 @@ namespace DesignAlternatives.WinApp
 
                 for (int i = 0; i < (int)nudAlternativesNumber.Value; i++)
                 {
-                    newAlternatives.Add(new DesignAlternative { Name = $"Design {letters[i]}" });
+                    newAlternatives.Add(new DesignAlternative { Name = $"{letters[i]}" });
                 }
 
 
@@ -197,7 +201,7 @@ namespace DesignAlternatives.WinApp
 
         private async void btnSave_Click(object sender, EventArgs e)
         {
-            if(this.designAlternativeBindingSource.Current == null)
+            if(designAlternativeBindingSource.Current == null)
             {
                 return;
             }
@@ -214,5 +218,6 @@ namespace DesignAlternatives.WinApp
                 MessageBox.Show(ex.Message, Settings.Default.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }

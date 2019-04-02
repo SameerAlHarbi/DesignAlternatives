@@ -107,6 +107,7 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DesignAlternatives.WinApp.Models.Category.datasource" />
     <None Include="Properties\DataSources\DesignAlternatives.WinApp.Models.DesignAlternative.datasource" />
+    <None Include="Properties\DataSources\DesignAlternatives.WinApp.Models.DesignAlternativeResult.datasource" />
     <None Include="Properties\DataSources\DesignAlternatives.WinApp.Models.DesignOption.datasource" />
     <None Include="Properties\DataSources\DesignAlternatives.WinApp.Models.SubCategory.datasource" />
     <None Include="Properties\Settings.settings">
