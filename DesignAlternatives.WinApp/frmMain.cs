@@ -219,5 +219,14 @@ namespace DesignAlternatives.WinApp
             }
         }
 
+        private void label40_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

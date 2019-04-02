@@ -25,12 +25,16 @@ namespace DesignAlternatives.WinApp.Models
 
         public decimal BestSpaceFunctionalityDesignPercentage => BestSpaceFunctionalityDesign?.SpaceFunctionalityPercentage ?? 0;
 
+        public string BestSpaceFunctionalityDesignPercentageText => BestSpaceFunctionalityDesignPercentage + "%";
+
         public DesignAlternative BestAccessibilityDesign => _designAlternativesList
             .OrderByDescending(d => d.AccessibilityTotal).FirstOrDefault();
 
         public string BestAccessibilityDesignName => BestAccessibilityDesign != null ? $"{BestAccessibilityDesign.Name} ({BestAccessibilityDesign.AccessibilityTotal})" : "";
 
         public decimal BestAccessibilityDesignPercentage => BestAccessibilityDesign?.AccessibilityPercentage ?? 0;
+
+        public string BestAccessibilityDesignPercentageText => BestAccessibilityDesignPercentage + "%";
 
         public DesignAlternative BestRelationDesign => _designAlternativesList
             .OrderByDescending(d => d.RelationTotal).FirstOrDefault();
@@ -39,12 +43,16 @@ namespace DesignAlternatives.WinApp.Models
 
         public decimal BestRelationDesignPercentage => BestRelationDesign?.RelationPercentage ?? 0;
 
+        public string BestRelationDesignPercentageText => BestRelationDesignPercentage + "%";
+
         public DesignAlternative BestSizeDesign => _designAlternativesList
             .OrderByDescending(d => d.SizeTotal).FirstOrDefault();
 
         public string BestSizeDesignName => BestSizeDesign != null ? $"{BestSizeDesign.Name} ({BestSizeDesign.SizeTotal})" : "";
 
         public decimal BestSizeDesignPercentage => BestSizeDesign?.SizePercentage ?? 0;
+
+        public string BestSizeDesignPercentageText => BestSizeDesignPercentage + "%";
 
         #endregion
 
