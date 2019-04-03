@@ -179,7 +179,9 @@ namespace DesignAlternatives.WinApp
 
                 for (int i = 0; i < (int)nudAlternativesNumber.Value; i++)
                 {
-                    newAlternatives.Add(new DesignAlternative { Name = $"{letters[i]}" });
+                    newAlternatives.Add(new DesignAlternative {
+                        Name = $"{letters[i]}"
+                    });
                 }
 
 
@@ -227,6 +229,16 @@ namespace DesignAlternatives.WinApp
         private void label35_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 1;
         }
     }
 }

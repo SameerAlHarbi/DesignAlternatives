@@ -60,6 +60,8 @@
             this.nudAlternativesNumber = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.relatedToViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
@@ -101,7 +103,13 @@
             this.circulationAreaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnSave = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnResetDefaults = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -122,6 +130,7 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -135,6 +144,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -148,6 +158,7 @@
             this.label56 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -191,9 +202,9 @@
             this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             planEfficiencyIdLabel = new System.Windows.Forms.Label();
             shapeComplexityIdLabel = new System.Windows.Forms.Label();
             numberOfStoreyIdLabel = new System.Windows.Forms.Label();
@@ -229,6 +240,7 @@
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circulationAreaBindingSource)).BeginInit();
             this.tabControl1.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -531,6 +543,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.comboBox1);
@@ -545,6 +559,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "1. Building Orientation";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(216, 52);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(35, 24);
+            this.button3.TabIndex = 26;
+            this.button3.Text = "...";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(216, 115);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(35, 23);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "...";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // comboBox2
             // 
             this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.designAlternativeBindingSource, "RelatedToViewId", true));
@@ -555,7 +587,7 @@
             this.comboBox2.Location = new System.Drawing.Point(14, 114);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(229, 24);
+            this.comboBox2.Size = new System.Drawing.Size(197, 24);
             this.comboBox2.TabIndex = 1;
             this.comboBox2.ValueMember = "Id";
             // 
@@ -584,7 +616,7 @@
             this.comboBox1.Location = new System.Drawing.Point(15, 52);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(228, 24);
+            this.comboBox1.Size = new System.Drawing.Size(196, 24);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.ValueMember = "Id";
             // 
@@ -606,6 +638,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.glazingPercentageIdComboBox);
+            this.groupBox2.Controls.Add(this.button6);
+            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.facadeMaterialIdComboBox);
             this.groupBox2.Controls.Add(this.buildingFormIdComboBox);
             this.groupBox2.Controls.Add(this.label4);
@@ -628,7 +663,7 @@
             this.glazingPercentageIdComboBox.FormattingEnabled = true;
             this.glazingPercentageIdComboBox.Location = new System.Drawing.Point(14, 181);
             this.glazingPercentageIdComboBox.Name = "glazingPercentageIdComboBox";
-            this.glazingPercentageIdComboBox.Size = new System.Drawing.Size(229, 24);
+            this.glazingPercentageIdComboBox.Size = new System.Drawing.Size(197, 24);
             this.glazingPercentageIdComboBox.TabIndex = 6;
             this.glazingPercentageIdComboBox.ValueMember = "Id";
             // 
@@ -646,7 +681,7 @@
             this.facadeMaterialIdComboBox.FormattingEnabled = true;
             this.facadeMaterialIdComboBox.Location = new System.Drawing.Point(15, 116);
             this.facadeMaterialIdComboBox.Name = "facadeMaterialIdComboBox";
-            this.facadeMaterialIdComboBox.Size = new System.Drawing.Size(228, 24);
+            this.facadeMaterialIdComboBox.Size = new System.Drawing.Size(196, 24);
             this.facadeMaterialIdComboBox.TabIndex = 5;
             this.facadeMaterialIdComboBox.ValueMember = "Id";
             // 
@@ -664,7 +699,7 @@
             this.buildingFormIdComboBox.FormattingEnabled = true;
             this.buildingFormIdComboBox.Location = new System.Drawing.Point(15, 58);
             this.buildingFormIdComboBox.Name = "buildingFormIdComboBox";
-            this.buildingFormIdComboBox.Size = new System.Drawing.Size(228, 24);
+            this.buildingFormIdComboBox.Size = new System.Drawing.Size(196, 24);
             this.buildingFormIdComboBox.TabIndex = 4;
             this.buildingFormIdComboBox.ValueMember = "Id";
             // 
@@ -940,8 +975,21 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // btnResetDefaults
+            // 
+            this.btnResetDefaults.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnResetDefaults.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnResetDefaults.Image = global::DesignAlternatives.WinApp.Properties.Resources.refresh64_2;
+            this.btnResetDefaults.Location = new System.Drawing.Point(14, 573);
+            this.btnResetDefaults.Name = "btnResetDefaults";
+            this.btnResetDefaults.Size = new System.Drawing.Size(100, 81);
+            this.btnResetDefaults.TabIndex = 25;
+            this.toolTip1.SetToolTip(this.btnResetDefaults, "Reset to default designs");
+            this.btnResetDefaults.UseVisualStyleBackColor = true;
+            // 
             // tabControl1
             // 
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -952,8 +1000,72 @@
             this.tabControl1.Size = new System.Drawing.Size(1219, 706);
             this.tabControl1.TabIndex = 13;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.button1);
+            this.tabPage4.Controls.Add(this.label46);
+            this.tabPage4.Controls.Add(this.label45);
+            this.tabPage4.Controls.Add(this.label44);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1211, 677);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Main Page";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Green;
+            this.button1.Image = global::DesignAlternatives.WinApp.Properties.Resources.start_64;
+            this.button1.Location = new System.Drawing.Point(509, 340);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(192, 84);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Start";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label46.Location = new System.Drawing.Point(479, 170);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(253, 29);
+            this.label46.TabIndex = 24;
+            this.label46.Text = "Mr. Abdullah Al Saggaf";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label45.Location = new System.Drawing.Point(586, 122);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(39, 29);
+            this.label45.TabIndex = 24;
+            this.label45.Text = "By";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label44.Location = new System.Drawing.Point(404, 45);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(402, 39);
+            this.label44.TabIndex = 24;
+            this.label44.Text = "Design Alternatives System";
+            // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnResetDefaults);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.btnAdd);
             this.tabPage1.Controls.Add(this.nudAlternativesNumber);
@@ -1222,6 +1334,19 @@
             this.label34.TabIndex = 0;
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label36
+            // 
+            this.label36.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label36.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label36.Location = new System.Drawing.Point(10, 132);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(77, 23);
+            this.label36.TabIndex = 1;
+            this.label36.Text = "Sub Criteria";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label37
             // 
             this.label37.BackColor = System.Drawing.Color.Transparent;
@@ -1394,6 +1519,19 @@
             this.label25.TabIndex = 1;
             this.label25.Text = "Best Design";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            this.label33.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label33.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label33.Location = new System.Drawing.Point(10, 132);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(77, 23);
+            this.label33.TabIndex = 1;
+            this.label33.Text = "Sub Criteria";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label26
             // 
@@ -1568,6 +1706,19 @@
             this.label53.Size = new System.Drawing.Size(88, 23);
             this.label53.TabIndex = 0;
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label23.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label23.Location = new System.Drawing.Point(10, 132);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(77, 23);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "Sub Criteria";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label51
             // 
@@ -1944,44 +2095,32 @@
             this.dataGridViewTextBoxColumn66.Name = "dataGridViewTextBoxColumn66";
             this.dataGridViewTextBoxColumn66.ReadOnly = true;
             // 
-            // label23
+            // button4
             // 
-            this.label23.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label23.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label23.Location = new System.Drawing.Point(10, 132);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(77, 23);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "Sub Criteria";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button4.Location = new System.Drawing.Point(216, 117);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(35, 23);
+            this.button4.TabIndex = 26;
+            this.button4.Text = "...";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // label33
+            // button5
             // 
-            this.label33.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label33.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label33.Location = new System.Drawing.Point(10, 132);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(77, 23);
-            this.label33.TabIndex = 1;
-            this.label33.Text = "Sub Criteria";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button5.Location = new System.Drawing.Point(216, 58);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(35, 23);
+            this.button5.TabIndex = 26;
+            this.button5.Text = "...";
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // label36
+            // button6
             // 
-            this.label36.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label36.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label36.Location = new System.Drawing.Point(10, 132);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(77, 23);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "Sub Criteria";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button6.Location = new System.Drawing.Point(217, 182);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(35, 23);
+            this.button6.TabIndex = 26;
+            this.button6.Text = "...";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
@@ -2027,6 +2166,8 @@
             this.groupBox7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circulationAreaBindingSource)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -2201,6 +2342,17 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnResetDefaults;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
     }
 }
 
