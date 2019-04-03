@@ -65,6 +65,8 @@ namespace DesignAlternatives.WinApp.Models
 
         public decimal BestConstructionPerformanceDesignPercentage => BestConstructionPerformanceDesign?.ConstructionPerformancePercentage ?? 0;
 
+        public string BestConstructionPerformanceDesignPercentageText => BestConstructionPerformanceDesignPercentage + "%";
+
         public DesignAlternative BestCosteDesign => _designAlternativesList
             .OrderByDescending(d => d.CostTotal).FirstOrDefault();
 
@@ -72,12 +74,16 @@ namespace DesignAlternatives.WinApp.Models
 
         public decimal BestCosteDesignPercentage => BestCosteDesign?.CostPercentage ?? 0;
 
+        public string BestCosteDesignPercentageText => BestCosteDesignPercentage + "%";
+
         public DesignAlternative BestTimeDesign => _designAlternativesList
             .OrderByDescending(d => d.TimeTotal).FirstOrDefault();
 
         public string BestTimeDesignName => BestTimeDesign != null ? $"{BestTimeDesign.Name} ({BestTimeDesign.TimeTotal})" : "";
 
         public decimal BestTimeDesignPercentage => BestTimeDesign?.TimePercentage ?? 0;
+
+        public string BestTimeDesignPercentageText => BestTimeDesignPercentage + "%";
 
         #endregion
 
@@ -90,6 +96,8 @@ namespace DesignAlternatives.WinApp.Models
 
         public decimal BestOperationPerformanceDesignPercentage => BestOperationPerformanceDesign?.OperationPerformancePercentage ?? 0;
 
+        public string BestOperationPerformanceDesignPercentageText => BestOperationPerformanceDesignPercentage + "%";
+
         public DesignAlternative BestEnergyDesign => _designAlternativesList
            .OrderByDescending(d => d.EnergyTotal).FirstOrDefault();
 
@@ -97,12 +105,16 @@ namespace DesignAlternatives.WinApp.Models
 
         public decimal BestEnergyDesignPercentage => BestEnergyDesign?.EnergyPercentage ?? 0;
 
+        public string BestEnergyDesignPercentageText => BestEnergyDesignPercentage + "%";
+
         public DesignAlternative BestMaintenanceDesign => _designAlternativesList
            .OrderByDescending(d => d.MaintenanceTotal).FirstOrDefault();
 
         public string BestMaintenanceDesignName => BestMaintenanceDesign != null ? $"{BestMaintenanceDesign.Name} ({BestMaintenanceDesign.MaintenanceTotal})" : "";
 
         public decimal BestMaintenanceDesignPercentage => BestMaintenanceDesign?.MaintenancePercentage ?? 0;
+
+        public string BestMaintenanceDesignPercentageText => BestMaintenanceDesignPercentage + "%";
 
         #endregion
 
@@ -112,6 +124,8 @@ namespace DesignAlternatives.WinApp.Models
         public string BestAestheticsDesignName => BestAestheticsDesign != null ? $"{BestAestheticsDesign.Name} ({BestAestheticsDesign.AestheticsTotal})" : "";
 
         public decimal BestAestheticsDesignPercentage => BestAestheticsDesign?.AestheticsPercentage ?? 0;
+
+        public string BestAestheticsDesignPercentageText => BestAestheticsDesignPercentage + "%";
 
     }
 }

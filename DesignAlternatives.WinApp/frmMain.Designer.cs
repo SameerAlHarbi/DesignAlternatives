@@ -39,10 +39,6 @@
             System.Windows.Forms.Label sunBreakersGeometryIdLabel;
             System.Windows.Forms.Label spanDimensionIdLabel;
             System.Windows.Forms.Label circulationAreaIdLabel;
-            System.Windows.Forms.Label label31;
-            System.Windows.Forms.Label label30;
-            System.Windows.Forms.Label label45;
-            System.Windows.Forms.Label label46;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.designAlternativeResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnSettings = new System.Windows.Forms.Button();
@@ -109,6 +105,37 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -116,50 +143,16 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.designAlternativeDataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -198,6 +191,9 @@
             this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             planEfficiencyIdLabel = new System.Windows.Forms.Label();
             shapeComplexityIdLabel = new System.Windows.Forms.Label();
             numberOfStoreyIdLabel = new System.Windows.Forms.Label();
@@ -207,10 +203,6 @@
             sunBreakersGeometryIdLabel = new System.Windows.Forms.Label();
             spanDimensionIdLabel = new System.Windows.Forms.Label();
             circulationAreaIdLabel = new System.Windows.Forms.Label();
-            label31 = new System.Windows.Forms.Label();
-            label30 = new System.Windows.Forms.Label();
-            label45 = new System.Windows.Forms.Label();
-            label46 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeResultBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeBindingSource)).BeginInit();
@@ -239,9 +231,10 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -327,57 +320,9 @@
             circulationAreaIdLabel.TabIndex = 0;
             circulationAreaIdLabel.Text = "a. Circulation Area:";
             // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestRelationDesignPercentageText", true));
-            label31.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label31.ForeColor = System.Drawing.Color.Maroon;
-            label31.Location = new System.Drawing.Point(520, 515);
-            label31.Name = "label31";
-            label31.Size = new System.Drawing.Size(0, 16);
-            label31.TabIndex = 0;
-            label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // designAlternativeResultBindingSource
             // 
             this.designAlternativeResultBindingSource.DataSource = typeof(DesignAlternatives.WinApp.Models.DesignAlternativeResult);
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestRelationDesignName", true));
-            label30.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label30.ForeColor = System.Drawing.Color.Maroon;
-            label30.Location = new System.Drawing.Point(520, 480);
-            label30.Name = "label30";
-            label30.Size = new System.Drawing.Size(0, 16);
-            label30.TabIndex = 0;
-            label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label45
-            // 
-            label45.AutoSize = true;
-            label45.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestTimeDesignName", true));
-            label45.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label45.ForeColor = System.Drawing.Color.Maroon;
-            label45.Location = new System.Drawing.Point(656, 260);
-            label45.Name = "label45";
-            label45.Size = new System.Drawing.Size(0, 16);
-            label45.TabIndex = 0;
-            label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label46
-            // 
-            label46.AutoSize = true;
-            label46.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestTimeDesignPercentage", true));
-            label46.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label46.ForeColor = System.Drawing.Color.Maroon;
-            label46.Location = new System.Drawing.Point(656, 295);
-            label46.Name = "label46";
-            label46.Size = new System.Drawing.Size(0, 16);
-            label46.TabIndex = 0;
-            label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSettings
             // 
@@ -1044,34 +989,11 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.groupBox8);
-            this.tabPage2.Controls.Add(this.label16);
-            this.tabPage2.Controls.Add(this.label39);
-            this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.label15);
-            this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Controls.Add(this.label38);
-            this.tabPage2.Controls.Add(this.label51);
-            this.tabPage2.Controls.Add(this.label37);
-            this.tabPage2.Controls.Add(this.label36);
-            this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.groupBox11);
-            this.tabPage2.Controls.Add(this.label50);
-            this.tabPage2.Controls.Add(this.label49);
-            this.tabPage2.Controls.Add(this.label29);
             this.tabPage2.Controls.Add(this.groupBox10);
-            this.tabPage2.Controls.Add(this.label48);
-            this.tabPage2.Controls.Add(this.label32);
-            this.tabPage2.Controls.Add(this.label47);
-            this.tabPage2.Controls.Add(this.label28);
-            this.tabPage2.Controls.Add(label46);
-            this.tabPage2.Controls.Add(label31);
-            this.tabPage2.Controls.Add(label45);
-            this.tabPage2.Controls.Add(label30);
-            this.tabPage2.Controls.Add(this.label25);
-            this.tabPage2.Controls.Add(this.label42);
-            this.tabPage2.Controls.Add(this.label41);
-            this.tabPage2.Controls.Add(this.label26);
+            this.tabPage2.Controls.Add(this.groupBox9);
+            this.tabPage2.Controls.Add(this.groupBox8);
+            this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -1079,6 +1001,411 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "  Results  ";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.label47);
+            this.groupBox11.Controls.Add(this.label48);
+            this.groupBox11.Controls.Add(this.label49);
+            this.groupBox11.Controls.Add(this.label50);
+            this.groupBox11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox11.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBox11.Location = new System.Drawing.Point(915, 102);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(286, 251);
+            this.groupBox11.TabIndex = 24;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Aesthetics";
+            // 
+            // label47
+            // 
+            this.label47.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label47.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestAestheticsDesignName", true));
+            this.label47.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Maroon;
+            this.label47.Location = new System.Drawing.Point(19, 64);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(119, 33);
+            this.label47.TabIndex = 0;
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label48.Location = new System.Drawing.Point(37, 37);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(79, 17);
+            this.label48.TabIndex = 1;
+            this.label48.Text = "Best Design";
+            // 
+            // label49
+            // 
+            this.label49.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label49.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestAestheticsDesignPercentageText", true));
+            this.label49.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.Maroon;
+            this.label49.Location = new System.Drawing.Point(144, 64);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(124, 33);
+            this.label49.TabIndex = 0;
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label50.Location = new System.Drawing.Point(168, 37);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(77, 17);
+            this.label50.TabIndex = 1;
+            this.label50.Text = "Percentage";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.label17);
+            this.groupBox10.Controls.Add(this.label20);
+            this.groupBox10.Controls.Add(this.label21);
+            this.groupBox10.Controls.Add(this.label24);
+            this.groupBox10.Controls.Add(this.label42);
+            this.groupBox10.Controls.Add(this.label41);
+            this.groupBox10.Controls.Add(this.label31);
+            this.groupBox10.Controls.Add(this.label39);
+            this.groupBox10.Controls.Add(this.label32);
+            this.groupBox10.Controls.Add(this.label38);
+            this.groupBox10.Controls.Add(this.label34);
+            this.groupBox10.Controls.Add(this.label36);
+            this.groupBox10.Controls.Add(this.label37);
+            this.groupBox10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox10.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBox10.Location = new System.Drawing.Point(613, 102);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(286, 251);
+            this.groupBox10.TabIndex = 24;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Operation Performance";
+            // 
+            // label17
+            // 
+            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label17.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestOperationPerformanceDesignName", true));
+            this.label17.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Maroon;
+            this.label17.Location = new System.Drawing.Point(19, 64);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(119, 33);
+            this.label17.TabIndex = 0;
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label20.Location = new System.Drawing.Point(37, 37);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(79, 17);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "Best Design";
+            // 
+            // label21
+            // 
+            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label21.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestOperationPerformanceDesignPercentageText", true));
+            this.label21.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Maroon;
+            this.label21.Location = new System.Drawing.Point(144, 64);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(124, 33);
+            this.label21.TabIndex = 0;
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label24.Location = new System.Drawing.Point(168, 37);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(77, 17);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "Percentage";
+            // 
+            // label42
+            // 
+            this.label42.BackColor = System.Drawing.Color.Transparent;
+            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label42.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label42.Location = new System.Drawing.Point(10, 187);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(77, 23);
+            this.label42.TabIndex = 1;
+            this.label42.Text = "Maintenance";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label42.Click += new System.EventHandler(this.label40_Click);
+            // 
+            // label41
+            // 
+            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label41.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestEnergyDesignPercentageText", true));
+            this.label41.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.Maroon;
+            this.label41.Location = new System.Drawing.Point(189, 160);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(88, 23);
+            this.label41.TabIndex = 0;
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label41.Click += new System.EventHandler(this.label35_Click);
+            // 
+            // label31
+            // 
+            this.label31.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label31.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestMaintenanceDesignPercentageText", true));
+            this.label31.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Maroon;
+            this.label31.Location = new System.Drawing.Point(189, 187);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(88, 23);
+            this.label31.TabIndex = 0;
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label39
+            // 
+            this.label39.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label39.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label39.Location = new System.Drawing.Point(189, 132);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(88, 23);
+            this.label39.TabIndex = 1;
+            this.label39.Text = "Relative Index";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label32.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label32.Location = new System.Drawing.Point(93, 132);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(88, 23);
+            this.label32.TabIndex = 1;
+            this.label32.Text = "Best Design";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label38
+            // 
+            this.label38.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label38.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestEnergyDesignName", true));
+            this.label38.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.Maroon;
+            this.label38.Location = new System.Drawing.Point(93, 160);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(88, 23);
+            this.label38.TabIndex = 0;
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label34.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestMaintenanceDesignName", true));
+            this.label34.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.Maroon;
+            this.label34.Location = new System.Drawing.Point(93, 187);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(88, 23);
+            this.label34.TabIndex = 0;
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label37
+            // 
+            this.label37.BackColor = System.Drawing.Color.Transparent;
+            this.label37.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label37.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label37.Location = new System.Drawing.Point(10, 160);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(77, 23);
+            this.label37.TabIndex = 1;
+            this.label37.Text = "Energy";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.label13);
+            this.groupBox9.Controls.Add(this.label14);
+            this.groupBox9.Controls.Add(this.label15);
+            this.groupBox9.Controls.Add(this.label16);
+            this.groupBox9.Controls.Add(this.label30);
+            this.groupBox9.Controls.Add(this.label18);
+            this.groupBox9.Controls.Add(this.label29);
+            this.groupBox9.Controls.Add(this.label19);
+            this.groupBox9.Controls.Add(this.label22);
+            this.groupBox9.Controls.Add(this.label28);
+            this.groupBox9.Controls.Add(this.label25);
+            this.groupBox9.Controls.Add(this.label33);
+            this.groupBox9.Controls.Add(this.label26);
+            this.groupBox9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBox9.Location = new System.Drawing.Point(311, 102);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(286, 251);
+            this.groupBox9.TabIndex = 24;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Construction Performance";
+            // 
+            // label13
+            // 
+            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestConstructionPerformanceDesignName", true));
+            this.label13.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Maroon;
+            this.label13.Location = new System.Drawing.Point(19, 64);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(119, 33);
+            this.label13.TabIndex = 0;
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label14.Location = new System.Drawing.Point(37, 37);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(79, 17);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Best Design";
+            // 
+            // label15
+            // 
+            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label15.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestConstructionPerformanceDesignPercentageText", true));
+            this.label15.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Maroon;
+            this.label15.Location = new System.Drawing.Point(144, 64);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(124, 33);
+            this.label15.TabIndex = 0;
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label16.Location = new System.Drawing.Point(168, 37);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(77, 17);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "Percentage";
+            // 
+            // label30
+            // 
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label30.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label30.Location = new System.Drawing.Point(10, 187);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(77, 23);
+            this.label30.TabIndex = 1;
+            this.label30.Text = "Time";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label30.Click += new System.EventHandler(this.label40_Click);
+            // 
+            // label18
+            // 
+            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label18.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestCosteDesignPercentageText", true));
+            this.label18.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Maroon;
+            this.label18.Location = new System.Drawing.Point(189, 160);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(88, 23);
+            this.label18.TabIndex = 0;
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label18.Click += new System.EventHandler(this.label35_Click);
+            // 
+            // label29
+            // 
+            this.label29.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label29.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label29.Location = new System.Drawing.Point(189, 132);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(88, 23);
+            this.label29.TabIndex = 1;
+            this.label29.Text = "Relative Index";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label19.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestCosteDesignName", true));
+            this.label19.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Maroon;
+            this.label19.Location = new System.Drawing.Point(93, 160);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(88, 23);
+            this.label19.TabIndex = 0;
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label22.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label22.Location = new System.Drawing.Point(10, 160);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(77, 23);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "Cost";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label28.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestTimeDesignName", true));
+            this.label28.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.Maroon;
+            this.label28.Location = new System.Drawing.Point(93, 187);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(88, 23);
+            this.label28.TabIndex = 0;
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label25.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label25.Location = new System.Drawing.Point(93, 132);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(88, 23);
+            this.label25.TabIndex = 1;
+            this.label25.Text = "Best Design";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label26.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestTimeDesignPercentageText", true));
+            this.label26.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Maroon;
+            this.label26.Location = new System.Drawing.Point(189, 187);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(88, 23);
+            this.label26.TabIndex = 0;
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox8
             // 
@@ -1088,24 +1415,21 @@
             this.groupBox8.Controls.Add(this.label11);
             this.groupBox8.Controls.Add(this.label52);
             this.groupBox8.Controls.Add(this.label40);
-            this.groupBox8.Controls.Add(this.label43);
-            this.groupBox8.Controls.Add(this.label56);
-            this.groupBox8.Controls.Add(this.label60);
-            this.groupBox8.Controls.Add(this.label58);
-            this.groupBox8.Controls.Add(this.label34);
+            this.groupBox8.Controls.Add(this.label61);
             this.groupBox8.Controls.Add(this.label55);
+            this.groupBox8.Controls.Add(this.label56);
             this.groupBox8.Controls.Add(this.label54);
             this.groupBox8.Controls.Add(this.label53);
+            this.groupBox8.Controls.Add(this.label23);
+            this.groupBox8.Controls.Add(this.label51);
+            this.groupBox8.Controls.Add(this.label43);
             this.groupBox8.Controls.Add(this.label27);
-            this.groupBox8.Controls.Add(this.label59);
-            this.groupBox8.Controls.Add(this.label57);
             this.groupBox8.Controls.Add(this.label35);
-            this.groupBox8.Controls.Add(this.label33);
             this.groupBox8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox8.Location = new System.Drawing.Point(6, 102);
+            this.groupBox8.Location = new System.Drawing.Point(9, 102);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(302, 445);
+            this.groupBox8.Size = new System.Drawing.Size(286, 251);
             this.groupBox8.TabIndex = 24;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Space Functionality";
@@ -1116,7 +1440,7 @@
             this.label8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestSpaceFunctionalityDesignName", true));
             this.label8.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Maroon;
-            this.label8.Location = new System.Drawing.Point(27, 64);
+            this.label8.Location = new System.Drawing.Point(19, 64);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(119, 33);
             this.label8.TabIndex = 0;
@@ -1127,7 +1451,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label10.Location = new System.Drawing.Point(45, 37);
+            this.label10.Location = new System.Drawing.Point(37, 37);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(79, 17);
             this.label10.TabIndex = 1;
@@ -1139,7 +1463,7 @@
             this.label12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestSpaceFunctionalityDesignPercentageText", true));
             this.label12.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Maroon;
-            this.label12.Location = new System.Drawing.Point(152, 64);
+            this.label12.Location = new System.Drawing.Point(144, 64);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(124, 33);
             this.label12.TabIndex = 0;
@@ -1150,7 +1474,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label11.Location = new System.Drawing.Point(176, 37);
+            this.label11.Location = new System.Drawing.Point(168, 37);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(77, 17);
             this.label11.TabIndex = 1;
@@ -1158,13 +1482,13 @@
             // 
             // label52
             // 
-            this.label52.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label52.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label52.Location = new System.Drawing.Point(27, 353);
+            this.label52.BackColor = System.Drawing.Color.Transparent;
+            this.label52.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label52.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label52.Location = new System.Drawing.Point(10, 213);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(249, 23);
+            this.label52.Size = new System.Drawing.Size(77, 23);
             this.label52.TabIndex = 1;
             this.label52.Text = "Size";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1172,75 +1496,30 @@
             // 
             // label40
             // 
-            this.label40.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label40.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label40.Location = new System.Drawing.Point(27, 241);
+            this.label40.BackColor = System.Drawing.Color.Transparent;
+            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label40.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label40.Location = new System.Drawing.Point(10, 187);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(249, 23);
+            this.label40.Size = new System.Drawing.Size(77, 23);
             this.label40.TabIndex = 1;
             this.label40.Text = "Relation";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label40.Click += new System.EventHandler(this.label40_Click);
             // 
-            // label43
+            // label61
             // 
-            this.label43.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label43.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label43.Location = new System.Drawing.Point(27, 121);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(249, 23);
-            this.label43.TabIndex = 1;
-            this.label43.Text = "Accessibility";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label56
-            // 
-            this.label56.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label56.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestSizeDesignName", true));
-            this.label56.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.Color.Maroon;
-            this.label56.Location = new System.Drawing.Point(54, 408);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(92, 23);
-            this.label56.TabIndex = 0;
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label60.Location = new System.Drawing.Point(165, 385);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(70, 14);
-            this.label60.TabIndex = 1;
-            this.label60.Text = "Percentage";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label58.Location = new System.Drawing.Point(165, 276);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(70, 14);
-            this.label58.TabIndex = 1;
-            this.label58.Text = "Percentage";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label34.Location = new System.Drawing.Point(165, 158);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(70, 14);
-            this.label34.TabIndex = 1;
-            this.label34.Text = "Percentage";
+            this.label61.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label61.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label61.Location = new System.Drawing.Point(189, 132);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(88, 23);
+            this.label61.TabIndex = 1;
+            this.label61.Text = "Relative Index";
+            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label55
             // 
@@ -1248,11 +1527,23 @@
             this.label55.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestSizeDesignPercentageText", true));
             this.label55.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.ForeColor = System.Drawing.Color.Maroon;
-            this.label55.Location = new System.Drawing.Point(152, 408);
+            this.label55.Location = new System.Drawing.Point(189, 213);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(92, 23);
+            this.label55.Size = new System.Drawing.Size(88, 23);
             this.label55.TabIndex = 0;
             this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label56
+            // 
+            this.label56.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label56.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestSizeDesignName", true));
+            this.label56.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.Color.Maroon;
+            this.label56.Location = new System.Drawing.Point(93, 213);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(88, 23);
+            this.label56.TabIndex = 0;
+            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label54
             // 
@@ -1260,9 +1551,9 @@
             this.label54.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestRelationDesignName", true));
             this.label54.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.ForeColor = System.Drawing.Color.Maroon;
-            this.label54.Location = new System.Drawing.Point(56, 304);
+            this.label54.Location = new System.Drawing.Point(93, 187);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(92, 23);
+            this.label54.Size = new System.Drawing.Size(88, 23);
             this.label54.TabIndex = 0;
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1272,11 +1563,37 @@
             this.label53.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestRelationDesignPercentageText", true));
             this.label53.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.ForeColor = System.Drawing.Color.Maroon;
-            this.label53.Location = new System.Drawing.Point(154, 304);
+            this.label53.Location = new System.Drawing.Point(189, 187);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(92, 23);
+            this.label53.Size = new System.Drawing.Size(88, 23);
             this.label53.TabIndex = 0;
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label51
+            // 
+            this.label51.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label51.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label51.Location = new System.Drawing.Point(93, 132);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(88, 23);
+            this.label51.TabIndex = 1;
+            this.label51.Text = "Best Design";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label43
+            // 
+            this.label43.BackColor = System.Drawing.Color.Transparent;
+            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label43.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label43.Location = new System.Drawing.Point(10, 160);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(77, 23);
+            this.label43.TabIndex = 1;
+            this.label43.Text = "Accessibility";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label27
             // 
@@ -1284,33 +1601,11 @@
             this.label27.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestAccessibilityDesignName", true));
             this.label27.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Maroon;
-            this.label27.Location = new System.Drawing.Point(56, 185);
+            this.label27.Location = new System.Drawing.Point(93, 160);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(92, 23);
+            this.label27.Size = new System.Drawing.Size(88, 23);
             this.label27.TabIndex = 0;
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label59.Location = new System.Drawing.Point(67, 385);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(71, 14);
-            this.label59.TabIndex = 1;
-            this.label59.Text = "Best Design";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label57.Location = new System.Drawing.Point(67, 276);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(71, 14);
-            this.label57.TabIndex = 1;
-            this.label57.Text = "Best Design";
             // 
             // label35
             // 
@@ -1318,125 +1613,12 @@
             this.label35.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestAccessibilityDesignPercentageText", true));
             this.label35.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.Maroon;
-            this.label35.Location = new System.Drawing.Point(154, 185);
+            this.label35.Location = new System.Drawing.Point(189, 160);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(92, 23);
+            this.label35.Size = new System.Drawing.Size(88, 23);
             this.label35.TabIndex = 0;
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label35.Click += new System.EventHandler(this.label35_Click);
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label33.Location = new System.Drawing.Point(67, 158);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(71, 14);
-            this.label33.TabIndex = 1;
-            this.label33.Text = "Best Design";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label16.Location = new System.Drawing.Point(605, 138);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(77, 17);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "Percentage";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label39.Location = new System.Drawing.Point(444, 632);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(70, 14);
-            this.label39.TabIndex = 1;
-            this.label39.Text = "Percentage";
-            // 
-            // label13
-            // 
-            this.label13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestConstructionPerformanceDesignName", true));
-            this.label13.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Maroon;
-            this.label13.Location = new System.Drawing.Point(445, 165);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(124, 45);
-            this.label13.TabIndex = 0;
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label15.Location = new System.Drawing.Point(468, 138);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(79, 17);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Best Design";
-            // 
-            // label14
-            // 
-            this.label14.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestConstructionPerformanceDesignPercentage", true));
-            this.label14.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Maroon;
-            this.label14.Location = new System.Drawing.Point(581, 165);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(124, 45);
-            this.label14.TabIndex = 0;
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label38.Location = new System.Drawing.Point(443, 597);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(71, 14);
-            this.label38.TabIndex = 1;
-            this.label38.Text = "Best Design";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label51.Location = new System.Drawing.Point(580, 296);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(70, 14);
-            this.label51.TabIndex = 1;
-            this.label51.Text = "Percentage";
-            // 
-            // label37
-            // 
-            this.label37.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label37.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label37.Location = new System.Drawing.Point(444, 558);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(125, 23);
-            this.label37.TabIndex = 1;
-            this.label37.Text = "Size";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestSizeDesignPercentageText", true));
-            this.label36.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.Maroon;
-            this.label36.Location = new System.Drawing.Point(426, 521);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(0, 16);
-            this.label36.TabIndex = 0;
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -1448,257 +1630,6 @@
             this.label7.Size = new System.Drawing.Size(488, 27);
             this.label7.TabIndex = 23;
             this.label7.Text = "Best Design for Each Quality Criteria/Sub-Criteria";
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.label24);
-            this.groupBox11.Controls.Add(this.label23);
-            this.groupBox11.Controls.Add(this.label21);
-            this.groupBox11.Controls.Add(this.label22);
-            this.groupBox11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox11.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox11.Location = new System.Drawing.Point(902, 369);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(285, 203);
-            this.groupBox11.TabIndex = 21;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Aesthetics";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label24.Location = new System.Drawing.Point(169, 37);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(77, 17);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "Percentage";
-            // 
-            // label23
-            // 
-            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label23.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestAestheticsDesignName", true));
-            this.label23.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Maroon;
-            this.label23.Location = new System.Drawing.Point(15, 64);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(124, 45);
-            this.label23.TabIndex = 0;
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label21.Location = new System.Drawing.Point(38, 37);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(79, 17);
-            this.label21.TabIndex = 1;
-            this.label21.Text = "Best Design";
-            // 
-            // label22
-            // 
-            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label22.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestAestheticsDesignPercentage", true));
-            this.label22.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Maroon;
-            this.label22.Location = new System.Drawing.Point(145, 64);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(124, 45);
-            this.label22.TabIndex = 0;
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label50.Location = new System.Drawing.Point(579, 261);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(71, 14);
-            this.label50.TabIndex = 1;
-            this.label50.Text = "Best Design";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label49.Location = new System.Drawing.Point(607, 636);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(70, 14);
-            this.label49.TabIndex = 1;
-            this.label49.Text = "Percentage";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label29.Location = new System.Drawing.Point(340, 552);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(70, 14);
-            this.label29.TabIndex = 1;
-            this.label29.Text = "Percentage";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.label20);
-            this.groupBox10.Controls.Add(this.label19);
-            this.groupBox10.Controls.Add(this.label17);
-            this.groupBox10.Controls.Add(this.label18);
-            this.groupBox10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox10.Location = new System.Drawing.Point(902, 6);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(294, 157);
-            this.groupBox10.TabIndex = 22;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Operation Performance";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label20.Location = new System.Drawing.Point(169, 37);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(77, 17);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "Percentage";
-            // 
-            // label19
-            // 
-            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label19.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestOperationPerformanceDesignName", true));
-            this.label19.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Maroon;
-            this.label19.Location = new System.Drawing.Point(15, 64);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(124, 45);
-            this.label19.TabIndex = 0;
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label17.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestOperationPerformanceDesignPercentage", true));
-            this.label17.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Maroon;
-            this.label17.Location = new System.Drawing.Point(145, 64);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(124, 45);
-            this.label17.TabIndex = 0;
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label18.Location = new System.Drawing.Point(38, 37);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(79, 17);
-            this.label18.TabIndex = 1;
-            this.label18.Text = "Best Design";
-            // 
-            // label48
-            // 
-            this.label48.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label48.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label48.Location = new System.Drawing.Point(580, 223);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(125, 23);
-            this.label48.TabIndex = 1;
-            this.label48.Text = "Time";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label32
-            // 
-            this.label32.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label32.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label32.Location = new System.Drawing.Point(444, 443);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(125, 23);
-            this.label32.TabIndex = 1;
-            this.label32.Text = "Relation";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label47.Location = new System.Drawing.Point(606, 611);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(71, 14);
-            this.label47.TabIndex = 1;
-            this.label47.Text = "Best Design";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label28.Location = new System.Drawing.Point(583, 533);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(71, 14);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "Best Design";
-            // 
-            // label25
-            // 
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label25.Location = new System.Drawing.Point(777, 507);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(119, 23);
-            this.label25.TabIndex = 1;
-            this.label25.Text = "Accessibility";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestCosteDesignName", true));
-            this.label42.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.Maroon;
-            this.label42.Location = new System.Drawing.Point(677, 610);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(0, 16);
-            this.label42.TabIndex = 0;
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestCosteDesignPercentage", true));
-            this.label41.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.Maroon;
-            this.label41.Location = new System.Drawing.Point(677, 635);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(0, 16);
-            this.label41.TabIndex = 0;
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designAlternativeResultBindingSource, "BestAccessibilityDesignName", true));
-            this.label26.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.Maroon;
-            this.label26.Location = new System.Drawing.Point(366, 480);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(0, 16);
-            this.label26.TabIndex = 0;
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tabPage3
             // 
@@ -2013,6 +1944,45 @@
             this.dataGridViewTextBoxColumn66.Name = "dataGridViewTextBoxColumn66";
             this.dataGridViewTextBoxColumn66.ReadOnly = true;
             // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label23.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label23.Location = new System.Drawing.Point(10, 132);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(77, 23);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "Sub Criteria";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            this.label33.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label33.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label33.Location = new System.Drawing.Point(10, 132);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(77, 23);
+            this.label33.TabIndex = 1;
+            this.label33.Text = "Sub Criteria";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label36
+            // 
+            this.label36.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label36.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label36.Location = new System.Drawing.Point(10, 132);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(77, 23);
+            this.label36.TabIndex = 1;
+            this.label36.Text = "Sub Criteria";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2061,12 +2031,14 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -2127,25 +2099,11 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.BindingSource designAlternativeResultBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn AccessibilityTotal;
@@ -2197,27 +2155,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn64;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn65;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn66;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label41;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label52;
@@ -2225,10 +2165,42 @@
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label23;
     }
 }
 
