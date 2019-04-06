@@ -71,6 +71,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.glazingPercentageIdComboBox = new System.Windows.Forms.ComboBox();
             this.glazingPercentageBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.facadeMaterialIdComboBox = new System.Windows.Forms.ComboBox();
             this.facadeMaterialBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buildingFormIdComboBox = new System.Windows.Forms.ComboBox();
@@ -111,7 +114,20 @@
             this.label45 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnCalc = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.button7 = new System.Windows.Forms.Button();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.label59 = new System.Windows.Forms.Label();
+            this.lblBestCriteriaPercentage = new System.Windows.Forms.Label();
+            this.lblBestCriteria = new System.Windows.Forms.Label();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.rdAethiticas = new System.Windows.Forms.RadioButton();
+            this.rdOperationPerformance = new System.Windows.Forms.RadioButton();
+            this.rdConstructionPerformance = new System.Windows.Forms.RadioButton();
+            this.rdSpaceFunctionality = new System.Windows.Forms.RadioButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.label47 = new System.Windows.Forms.Label();
@@ -202,9 +218,21 @@
             this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.designAlternativeDataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             planEfficiencyIdLabel = new System.Windows.Forms.Label();
             shapeComplexityIdLabel = new System.Windows.Forms.Label();
             numberOfStoreyIdLabel = new System.Windows.Forms.Label();
@@ -242,6 +270,9 @@
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox12.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -249,6 +280,8 @@
             this.groupBox8.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView1)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // planEfficiencyIdLabel
@@ -259,6 +292,8 @@
             planEfficiencyIdLabel.Size = new System.Drawing.Size(109, 16);
             planEfficiencyIdLabel.TabIndex = 0;
             planEfficiencyIdLabel.Text = "a. Plan Efficiency:";
+            this.toolTip1.SetToolTip(planEfficiencyIdLabel, "The ratio of building exterior walls area to the building Gross Floors Area (GFA)" +
+        "");
             // 
             // shapeComplexityIdLabel
             // 
@@ -268,6 +303,7 @@
             shapeComplexityIdLabel.Size = new System.Drawing.Size(130, 16);
             shapeComplexityIdLabel.TabIndex = 2;
             shapeComplexityIdLabel.Text = "b. Shape Complexity:";
+            this.toolTip1.SetToolTip(shapeComplexityIdLabel, "The proportion degree of building plan dimensions and its setting out ");
             // 
             // numberOfStoreyIdLabel
             // 
@@ -277,6 +313,7 @@
             numberOfStoreyIdLabel.Size = new System.Drawing.Size(131, 16);
             numberOfStoreyIdLabel.TabIndex = 0;
             numberOfStoreyIdLabel.Text = "a. Number Of Storey:";
+            this.toolTip1.SetToolTip(numberOfStoreyIdLabel, "The number of storeys that building contains to the same floors area");
             // 
             // averageStoreyHeightIdLabel
             // 
@@ -286,6 +323,7 @@
             averageStoreyHeightIdLabel.Size = new System.Drawing.Size(156, 16);
             averageStoreyHeightIdLabel.TabIndex = 2;
             averageStoreyHeightIdLabel.Text = "b. Average Storey Height:";
+            this.toolTip1.SetToolTip(averageStoreyHeightIdLabel, "The different range of the storeys heights that give the average building height");
             // 
             // glazingShapeIdLabel
             // 
@@ -295,6 +333,7 @@
             glazingShapeIdLabel.Size = new System.Drawing.Size(105, 16);
             glazingShapeIdLabel.TabIndex = 0;
             glazingShapeIdLabel.Text = "a.Glazing Shape:";
+            this.toolTip1.SetToolTip(glazingShapeIdLabel, "The outline configuration shape of different building façade windows ");
             // 
             // glazingEfficiencyIdLabel
             // 
@@ -304,6 +343,8 @@
             glazingEfficiencyIdLabel.Size = new System.Drawing.Size(122, 16);
             glazingEfficiencyIdLabel.TabIndex = 2;
             glazingEfficiencyIdLabel.Text = "b.Glazing Efficiency:";
+            this.toolTip1.SetToolTip(glazingEfficiencyIdLabel, "The glazing elements features (Panel number, Reflectivity, Thermal Break, U-value" +
+        ") ");
             // 
             // sunBreakersGeometryIdLabel
             // 
@@ -313,6 +354,7 @@
             sunBreakersGeometryIdLabel.Size = new System.Drawing.Size(162, 16);
             sunBreakersGeometryIdLabel.TabIndex = 4;
             sunBreakersGeometryIdLabel.Text = "c. Sun Breakers Geometry:";
+            this.toolTip1.SetToolTip(sunBreakersGeometryIdLabel, "The sun-breakers panels configuration and shading areas");
             // 
             // spanDimensionIdLabel
             // 
@@ -322,6 +364,8 @@
             spanDimensionIdLabel.Size = new System.Drawing.Size(120, 16);
             spanDimensionIdLabel.TabIndex = 0;
             spanDimensionIdLabel.Text = "a. Span Dimension:";
+            this.toolTip1.SetToolTip(spanDimensionIdLabel, "The longest distance of usable area between exterior wall and fixed interior elem" +
+        "ent");
             // 
             // circulationAreaIdLabel
             // 
@@ -331,6 +375,8 @@
             circulationAreaIdLabel.Size = new System.Drawing.Size(119, 16);
             circulationAreaIdLabel.TabIndex = 0;
             circulationAreaIdLabel.Text = "a. Circulation Area:";
+            this.toolTip1.SetToolTip(circulationAreaIdLabel, "The ratio of building circulation space area to the building Gross Floors Area (G" +
+        "FA)");
             // 
             // designAlternativeResultBindingSource
             // 
@@ -469,6 +515,7 @@
             this.Score.HeaderText = "Score";
             this.Score.Name = "Score";
             this.Score.ReadOnly = true;
+            this.Score.Visible = false;
             this.Score.Width = 80;
             // 
             // Percentage
@@ -477,6 +524,7 @@
             this.Percentage.HeaderText = "Percentage";
             this.Percentage.Name = "Percentage";
             this.Percentage.ReadOnly = true;
+            this.Percentage.Visible = false;
             this.Percentage.Width = 90;
             // 
             // Rank
@@ -485,6 +533,7 @@
             this.Rank.HeaderText = "Rank";
             this.Rank.Name = "Rank";
             this.Rank.ReadOnly = true;
+            this.Rank.Visible = false;
             this.Rank.Width = 70;
             // 
             // designAlternativeBindingSource
@@ -589,6 +638,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(197, 24);
             this.comboBox2.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.comboBox2, "The building site sitting orientation to have natural or  not natural views");
             this.comboBox2.ValueMember = "Id";
             // 
             // relatedToViewBindingSource
@@ -605,6 +655,7 @@
             this.label3.Size = new System.Drawing.Size(122, 16);
             this.label3.TabIndex = 0;
             this.label3.Text = "b. Related To View:";
+            this.toolTip1.SetToolTip(this.label3, "The building site sitting orientation to have natural or  not natural views");
             // 
             // comboBox1
             // 
@@ -618,6 +669,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(196, 24);
             this.comboBox1.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.comboBox1, "The building site sitting orientation to face the likely and unlikely winds ");
             this.comboBox1.ValueMember = "Id";
             // 
             // relatedToWindBindingSource
@@ -634,6 +686,7 @@
             this.label2.Size = new System.Drawing.Size(123, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "a. Related To Wind:";
+            this.toolTip1.SetToolTip(this.label2, "The building site sitting orientation to face the likely and unlikely winds ");
             // 
             // groupBox2
             // 
@@ -665,12 +718,40 @@
             this.glazingPercentageIdComboBox.Name = "glazingPercentageIdComboBox";
             this.glazingPercentageIdComboBox.Size = new System.Drawing.Size(197, 24);
             this.glazingPercentageIdComboBox.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.glazingPercentageIdComboBox, "The ratio of façade glazing area to the same façade of wall area");
             this.glazingPercentageIdComboBox.ValueMember = "Id";
             // 
             // glazingPercentageBindingSource
             // 
             this.glazingPercentageBindingSource.AllowNew = false;
             this.glazingPercentageBindingSource.DataSource = typeof(DesignAlternatives.WinApp.Models.DesignOption);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(217, 182);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(35, 23);
+            this.button6.TabIndex = 26;
+            this.button6.Text = "...";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(216, 58);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(35, 23);
+            this.button5.TabIndex = 26;
+            this.button5.Text = "...";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(216, 117);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(35, 23);
+            this.button4.TabIndex = 26;
+            this.button4.Text = "...";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // facadeMaterialIdComboBox
             // 
@@ -683,6 +764,7 @@
             this.facadeMaterialIdComboBox.Name = "facadeMaterialIdComboBox";
             this.facadeMaterialIdComboBox.Size = new System.Drawing.Size(196, 24);
             this.facadeMaterialIdComboBox.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.facadeMaterialIdComboBox, "The exterior wall materials used to enclose the building façade and form");
             this.facadeMaterialIdComboBox.ValueMember = "Id";
             // 
             // facadeMaterialBindingSource
@@ -701,6 +783,7 @@
             this.buildingFormIdComboBox.Name = "buildingFormIdComboBox";
             this.buildingFormIdComboBox.Size = new System.Drawing.Size(196, 24);
             this.buildingFormIdComboBox.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.buildingFormIdComboBox, "The degree of how different building masses interlocking to the whole form");
             this.buildingFormIdComboBox.ValueMember = "Id";
             // 
             // buildingFormBindingSource
@@ -717,6 +800,7 @@
             this.label4.Size = new System.Drawing.Size(106, 16);
             this.label4.TabIndex = 0;
             this.label4.Text = "a. Building Form:";
+            this.toolTip1.SetToolTip(this.label4, "The degree of how different building masses interlocking to the whole form");
             // 
             // label6
             // 
@@ -727,6 +811,7 @@
             this.label6.Size = new System.Drawing.Size(136, 16);
             this.label6.TabIndex = 0;
             this.label6.Text = "c. Glazing Percentage:";
+            this.toolTip1.SetToolTip(this.label6, "The ratio of façade glazing area to the same façade of wall area");
             // 
             // label5
             // 
@@ -737,6 +822,7 @@
             this.label5.Size = new System.Drawing.Size(119, 16);
             this.label5.TabIndex = 0;
             this.label5.Text = "b. Facade Material:";
+            this.toolTip1.SetToolTip(this.label5, "The exterior wall materials used to enclose the building façade and form");
             // 
             // groupBox3
             // 
@@ -763,6 +849,7 @@
             this.shapeComplexityIdComboBox.Name = "shapeComplexityIdComboBox";
             this.shapeComplexityIdComboBox.Size = new System.Drawing.Size(228, 24);
             this.shapeComplexityIdComboBox.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.shapeComplexityIdComboBox, "The proportion degree of building plan dimensions and its setting out ");
             this.shapeComplexityIdComboBox.ValueMember = "Id";
             // 
             // shapeComplexityBindingSource
@@ -780,6 +867,8 @@
             this.planEfficiencyIdComboBox.Name = "planEfficiencyIdComboBox";
             this.planEfficiencyIdComboBox.Size = new System.Drawing.Size(228, 24);
             this.planEfficiencyIdComboBox.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.planEfficiencyIdComboBox, "The ratio of building exterior walls area to the building Gross Floors Area (GFA)" +
+        "");
             this.planEfficiencyIdComboBox.ValueMember = "Id";
             // 
             // planEfficiencyBindingSource
@@ -813,6 +902,7 @@
             this.sunBreakersGeometryIdComboBox.Name = "sunBreakersGeometryIdComboBox";
             this.sunBreakersGeometryIdComboBox.Size = new System.Drawing.Size(228, 24);
             this.sunBreakersGeometryIdComboBox.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.sunBreakersGeometryIdComboBox, "The sun-breakers panels configuration and shading areas");
             this.sunBreakersGeometryIdComboBox.ValueMember = "Id";
             // 
             // sunBreakersGeometryBindingSource
@@ -830,6 +920,8 @@
             this.glazingEfficiencyIdComboBox.Name = "glazingEfficiencyIdComboBox";
             this.glazingEfficiencyIdComboBox.Size = new System.Drawing.Size(228, 24);
             this.glazingEfficiencyIdComboBox.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.glazingEfficiencyIdComboBox, "The glazing elements features (Panel number, Reflectivity, Thermal Break, U-value" +
+        ") ");
             this.glazingEfficiencyIdComboBox.ValueMember = "Id";
             // 
             // glazingEfficiencyBindingSource
@@ -847,6 +939,7 @@
             this.glazingShapeIdComboBox.Name = "glazingShapeIdComboBox";
             this.glazingShapeIdComboBox.Size = new System.Drawing.Size(228, 24);
             this.glazingShapeIdComboBox.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.glazingShapeIdComboBox, "The outline configuration shape of different building façade windows ");
             this.glazingShapeIdComboBox.ValueMember = "Id";
             // 
             // glazingShapeBindingSource
@@ -879,6 +972,7 @@
             this.averageStoreyHeightIdComboBox.Name = "averageStoreyHeightIdComboBox";
             this.averageStoreyHeightIdComboBox.Size = new System.Drawing.Size(228, 24);
             this.averageStoreyHeightIdComboBox.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.averageStoreyHeightIdComboBox, "The different range of the storeys heights that give the average building height");
             this.averageStoreyHeightIdComboBox.ValueMember = "Id";
             // 
             // averageStoreyHeightBindingSource
@@ -897,6 +991,7 @@
             this.numberOfStoreyIdComboBox.Name = "numberOfStoreyIdComboBox";
             this.numberOfStoreyIdComboBox.Size = new System.Drawing.Size(228, 24);
             this.numberOfStoreyIdComboBox.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.numberOfStoreyIdComboBox, "The number of storeys that building contains to the same floors area");
             this.numberOfStoreyIdComboBox.ValueMember = "Id";
             // 
             // numberOfStoreyBindingSource
@@ -926,6 +1021,8 @@
             this.spanDimensionIdComboBox.Name = "spanDimensionIdComboBox";
             this.spanDimensionIdComboBox.Size = new System.Drawing.Size(228, 24);
             this.spanDimensionIdComboBox.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.spanDimensionIdComboBox, "The longest distance of usable area between exterior wall and fixed interior elem" +
+        "ent");
             this.spanDimensionIdComboBox.ValueMember = "Id";
             // 
             // spanDimensionBindingSource
@@ -955,6 +1052,8 @@
             this.circulationAreaIdComboBox.Name = "circulationAreaIdComboBox";
             this.circulationAreaIdComboBox.Size = new System.Drawing.Size(228, 24);
             this.circulationAreaIdComboBox.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.circulationAreaIdComboBox, "The ratio of building circulation space area to the building Gross Floors Area (G" +
+        "FA)");
             this.circulationAreaIdComboBox.ValueMember = "Id";
             // 
             // circulationAreaBindingSource
@@ -975,24 +1074,33 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Description";
+            // 
             // btnResetDefaults
             // 
             this.btnResetDefaults.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnResetDefaults.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnResetDefaults.Image = global::DesignAlternatives.WinApp.Properties.Resources.refresh64_2;
-            this.btnResetDefaults.Location = new System.Drawing.Point(14, 573);
+            this.btnResetDefaults.Location = new System.Drawing.Point(14, 568);
             this.btnResetDefaults.Name = "btnResetDefaults";
-            this.btnResetDefaults.Size = new System.Drawing.Size(100, 81);
+            this.btnResetDefaults.Size = new System.Drawing.Size(108, 91);
             this.btnResetDefaults.TabIndex = 25;
             this.toolTip1.SetToolTip(this.btnResetDefaults, "Reset to default designs");
             this.btnResetDefaults.UseVisualStyleBackColor = true;
+            this.btnResetDefaults.Click += new System.EventHandler(this.btnResetDefaults_Click);
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
@@ -1065,6 +1173,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnCalc);
             this.tabPage1.Controls.Add(this.btnResetDefaults);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.btnAdd);
@@ -1088,6 +1197,17 @@
             this.tabPage1.Text = "  Design Alternatives  ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btnCalc
+            // 
+            this.btnCalc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCalc.Image = global::DesignAlternatives.WinApp.Properties.Resources.calc_63;
+            this.btnCalc.Location = new System.Drawing.Point(404, 568);
+            this.btnCalc.Name = "btnCalc";
+            this.btnCalc.Size = new System.Drawing.Size(108, 91);
+            this.btnCalc.TabIndex = 26;
+            this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -1098,6 +1218,145 @@
             this.label9.Size = new System.Drawing.Size(340, 33);
             this.label9.TabIndex = 24;
             this.label9.Text = "Design Alternatives Options";
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.button7);
+            this.tabPage6.Controls.Add(this.groupBox14);
+            this.tabPage6.Controls.Add(this.groupBox13);
+            this.tabPage6.Controls.Add(this.groupBox12);
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1211, 677);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "  Best Criteria/Sub-Criteria  ";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(125, 407);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(189, 46);
+            this.button7.TabIndex = 1;
+            this.button7.Text = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox14.Location = new System.Drawing.Point(742, 38);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(377, 235);
+            this.groupBox14.TabIndex = 1;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Best Design ( Sub Criteria )";
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.label59);
+            this.groupBox13.Controls.Add(this.lblBestCriteriaPercentage);
+            this.groupBox13.Controls.Add(this.lblBestCriteria);
+            this.groupBox13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox13.Location = new System.Drawing.Point(345, 38);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(391, 235);
+            this.groupBox13.TabIndex = 1;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Best Design ( Criteria )";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label59.Location = new System.Drawing.Point(134, 129);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(122, 17);
+            this.label59.TabIndex = 2;
+            this.label59.Text = "Relative Index (%)";
+            this.label59.Click += new System.EventHandler(this.label59_Click);
+            // 
+            // lblBestCriteriaPercentage
+            // 
+            this.lblBestCriteriaPercentage.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBestCriteriaPercentage.ForeColor = System.Drawing.Color.Green;
+            this.lblBestCriteriaPercentage.Location = new System.Drawing.Point(96, 153);
+            this.lblBestCriteriaPercentage.Name = "lblBestCriteriaPercentage";
+            this.lblBestCriteriaPercentage.Size = new System.Drawing.Size(198, 55);
+            this.lblBestCriteriaPercentage.TabIndex = 1;
+            this.lblBestCriteriaPercentage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBestCriteriaPercentage.Click += new System.EventHandler(this.label57_Click);
+            // 
+            // lblBestCriteria
+            // 
+            this.lblBestCriteria.Font = new System.Drawing.Font("Tahoma", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBestCriteria.ForeColor = System.Drawing.Color.Blue;
+            this.lblBestCriteria.Location = new System.Drawing.Point(96, 30);
+            this.lblBestCriteria.Name = "lblBestCriteria";
+            this.lblBestCriteria.Size = new System.Drawing.Size(198, 81);
+            this.lblBestCriteria.TabIndex = 1;
+            this.lblBestCriteria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBestCriteria.Click += new System.EventHandler(this.label57_Click);
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.rdAethiticas);
+            this.groupBox12.Controls.Add(this.rdOperationPerformance);
+            this.groupBox12.Controls.Add(this.rdConstructionPerformance);
+            this.groupBox12.Controls.Add(this.rdSpaceFunctionality);
+            this.groupBox12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox12.Location = new System.Drawing.Point(12, 38);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(327, 235);
+            this.groupBox12.TabIndex = 0;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Criteria";
+            // 
+            // rdAethiticas
+            // 
+            this.rdAethiticas.AutoSize = true;
+            this.rdAethiticas.Location = new System.Drawing.Point(42, 172);
+            this.rdAethiticas.Name = "rdAethiticas";
+            this.rdAethiticas.Size = new System.Drawing.Size(95, 23);
+            this.rdAethiticas.TabIndex = 0;
+            this.rdAethiticas.Text = "Aethiticas";
+            this.rdAethiticas.UseVisualStyleBackColor = true;
+            this.rdAethiticas.CheckedChanged += new System.EventHandler(this.rdSpaceFunctionality_CheckedChanged);
+            // 
+            // rdOperationPerformance
+            // 
+            this.rdOperationPerformance.AutoSize = true;
+            this.rdOperationPerformance.Location = new System.Drawing.Point(42, 130);
+            this.rdOperationPerformance.Name = "rdOperationPerformance";
+            this.rdOperationPerformance.Size = new System.Drawing.Size(191, 23);
+            this.rdOperationPerformance.TabIndex = 0;
+            this.rdOperationPerformance.Text = "Operation Performance";
+            this.rdOperationPerformance.UseVisualStyleBackColor = true;
+            this.rdOperationPerformance.CheckedChanged += new System.EventHandler(this.rdSpaceFunctionality_CheckedChanged);
+            // 
+            // rdConstructionPerformance
+            // 
+            this.rdConstructionPerformance.AutoSize = true;
+            this.rdConstructionPerformance.Location = new System.Drawing.Point(42, 88);
+            this.rdConstructionPerformance.Name = "rdConstructionPerformance";
+            this.rdConstructionPerformance.Size = new System.Drawing.Size(210, 23);
+            this.rdConstructionPerformance.TabIndex = 0;
+            this.rdConstructionPerformance.Text = "Construction Performance";
+            this.rdConstructionPerformance.UseVisualStyleBackColor = true;
+            this.rdConstructionPerformance.CheckedChanged += new System.EventHandler(this.rdSpaceFunctionality_CheckedChanged);
+            // 
+            // rdSpaceFunctionality
+            // 
+            this.rdSpaceFunctionality.AutoSize = true;
+            this.rdSpaceFunctionality.Location = new System.Drawing.Point(42, 46);
+            this.rdSpaceFunctionality.Name = "rdSpaceFunctionality";
+            this.rdSpaceFunctionality.Size = new System.Drawing.Size(162, 23);
+            this.rdSpaceFunctionality.TabIndex = 0;
+            this.rdSpaceFunctionality.Text = "Space Functionality";
+            this.rdSpaceFunctionality.UseVisualStyleBackColor = true;
+            this.rdSpaceFunctionality.CheckedChanged += new System.EventHandler(this.rdSpaceFunctionality_CheckedChanged);
             // 
             // tabPage2
             // 
@@ -2095,32 +2354,134 @@
             this.dataGridViewTextBoxColumn66.Name = "dataGridViewTextBoxColumn66";
             this.dataGridViewTextBoxColumn66.ReadOnly = true;
             // 
-            // button4
+            // tabPage5
             // 
-            this.button4.Location = new System.Drawing.Point(216, 117);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(35, 23);
-            this.button4.TabIndex = 26;
-            this.button4.Text = "...";
-            this.button4.UseVisualStyleBackColor = true;
+            this.tabPage5.Controls.Add(this.designAlternativeDataGridView2);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1211, 677);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "tabPage5";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // designAlternativeDataGridView2
             // 
-            this.button5.Location = new System.Drawing.Point(216, 58);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(35, 23);
-            this.button5.TabIndex = 26;
-            this.button5.Text = "...";
-            this.button5.UseVisualStyleBackColor = true;
+            this.designAlternativeDataGridView2.AllowUserToAddRows = false;
+            this.designAlternativeDataGridView2.AllowUserToDeleteRows = false;
+            this.designAlternativeDataGridView2.AutoGenerateColumns = false;
+            this.designAlternativeDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.designAlternativeDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn22,
+            this.dataGridViewTextBoxColumn24,
+            this.dataGridViewTextBoxColumn26,
+            this.dataGridViewTextBoxColumn28,
+            this.dataGridViewTextBoxColumn30});
+            this.designAlternativeDataGridView2.DataSource = this.designAlternativeBindingSource;
+            this.designAlternativeDataGridView2.Location = new System.Drawing.Point(6, 6);
+            this.designAlternativeDataGridView2.Name = "designAlternativeDataGridView2";
+            this.designAlternativeDataGridView2.ReadOnly = true;
+            this.designAlternativeDataGridView2.Size = new System.Drawing.Size(1199, 220);
+            this.designAlternativeDataGridView2.TabIndex = 0;
             // 
-            // button6
+            // dataGridViewTextBoxColumn6
             // 
-            this.button6.Location = new System.Drawing.Point(217, 182);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(35, 23);
-            this.button6.TabIndex = 26;
-            this.button6.Text = "...";
-            this.button6.UseVisualStyleBackColor = true;
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Description";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "RelatedToWind";
+            this.dataGridViewTextBoxColumn8.HeaderText = "RelatedToWind";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "RelatedToView";
+            this.dataGridViewTextBoxColumn10.HeaderText = "RelatedToView";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "BuildingForm";
+            this.dataGridViewTextBoxColumn12.HeaderText = "BuildingForm";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "FacadeMaterial";
+            this.dataGridViewTextBoxColumn14.HeaderText = "FacadeMaterial";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "GlazingPercentage";
+            this.dataGridViewTextBoxColumn16.HeaderText = "GlazingPercentage";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "PlanEfficiency";
+            this.dataGridViewTextBoxColumn18.HeaderText = "PlanEfficiency";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "ShapeComplexity";
+            this.dataGridViewTextBoxColumn20.HeaderText = "ShapeComplexity";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "NumberOfStorey";
+            this.dataGridViewTextBoxColumn22.HeaderText = "NumberOfStorey";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "AverageStoreyHeight";
+            this.dataGridViewTextBoxColumn24.HeaderText = "AverageStoreyHeight";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "GlazingShape";
+            this.dataGridViewTextBoxColumn26.HeaderText = "GlazingShape";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "GlazingEfficiency";
+            this.dataGridViewTextBoxColumn28.HeaderText = "GlazingEfficiency";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "SunBreakersGeometry";
+            this.dataGridViewTextBoxColumn30.HeaderText = "SunBreakersGeometry";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
             // 
             // frmMain
             // 
@@ -2170,6 +2531,11 @@
             this.tabPage4.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.groupBox11.ResumeLayout(false);
@@ -2182,6 +2548,8 @@
             this.groupBox8.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView1)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2246,18 +2614,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.BindingSource designAlternativeResultBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AccessibilityTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RelationTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SizeTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CostTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TimeTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EnergyTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaintenanceTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AestheticsTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Score;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Percentage;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Rank;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.DataGridView designAlternativeDataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -2353,6 +2709,46 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AccessibilityTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RelationTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SizeTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CostTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TimeTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EnergyTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaintenanceTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AestheticsTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Score;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Percentage;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rank;
+        private System.Windows.Forms.Button btnCalc;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.DataGridView designAlternativeDataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.RadioButton rdAethiticas;
+        private System.Windows.Forms.RadioButton rdOperationPerformance;
+        private System.Windows.Forms.RadioButton rdConstructionPerformance;
+        private System.Windows.Forms.RadioButton rdSpaceFunctionality;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.Label lblBestCriteria;
+        private System.Windows.Forms.Label lblBestCriteriaPercentage;
+        private System.Windows.Forms.Label label59;
     }
 }
 

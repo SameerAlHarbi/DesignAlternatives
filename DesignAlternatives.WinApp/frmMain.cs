@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -26,6 +27,7 @@ namespace DesignAlternatives.WinApp
         {
             await loadDesignOptions();
             await refreshData();
+           
         }
 
         private async Task loadDesignOptions()
@@ -80,28 +82,42 @@ namespace DesignAlternatives.WinApp
                         .Include(d => d.AverageStoreyHeight)
                         .Include(d => d.SpanDimension)
                         .Include(d => d.CirculationArea)
+                        .OrderBy(d => d.Name)
                         .ToListAsync();
 
                 nudAlternativesNumber.Value = allDesignAlternatives.Count > 0 ? allDesignAlternatives.Count : 1;
 
                 var totalScores = allDesignAlternatives.Sum(d => d.Score);
 
-                 var totalSpaceFunctionalities = allDesignAlternatives.Sum(d => d.SpaceFunctionalityTotal);
-                 var totalConstructionsPerformances = allDesignAlternatives.Sum(d => d.ConstructionPerformanceTotal);
-                 var totalOperationPerformances = allDesignAlternatives.Sum(d => d.OperationPerformanceTotal);
-                 var totalAestheticses = allDesignAlternatives.Sum(d => d.AestheticsTotal);
+                decimal accessibilityAddedValue = allDesignAlternatives.Max(d => d.AccessibilityAddedValue);
+                var totalAccessibilities = allDesignAlternatives.Sum(d => d.AccessibilityTotal + accessibilityAddedValue);
 
-                var totalAccessibilities = allDesignAlternatives.Sum(d => d.AccessibilityTotal);
-                var totalRelations = allDesignAlternatives.Sum(d => d.RelationTotal);
-                var totalSizes = allDesignAlternatives.Sum(d => d.SizeTotal);
+                decimal relationAddedValue = allDesignAlternatives.Max(d => d.RelationAddedValue);
+                var totalRelations = allDesignAlternatives.Sum(d => d.RelationTotal + relationAddedValue);
 
-                var totalCost = allDesignAlternatives.Sum(d => d.CostTotal);
-                var totalTime = allDesignAlternatives.Sum(d => d.TimeTotal);
+                decimal sizeAddedValue = allDesignAlternatives.Max(d => d.SizeAddedValue);
+                var totalSizes = allDesignAlternatives.Sum(d => d.SizeTotal + sizeAddedValue);
 
-                var totalEnergy = allDesignAlternatives.Sum(d => d.EnergyTotal);
-                var totalMaintenance = allDesignAlternatives.Sum(d => d.MaintenanceTotal);
+                var totalSpaceFunctionalities = totalAccessibilities + totalRelations + totalSizes;
 
-                var totalAesthetics = allDesignAlternatives.Sum(d => d.AestheticsTotal);
+                decimal costAddedValue = allDesignAlternatives.Max(d => d.CostAddedValue);
+                var totalCost = allDesignAlternatives.Sum(d => d.CostTotal + costAddedValue);
+
+                decimal timeAddedValue = allDesignAlternatives.Max(d => d.TimeAddedValue);
+                var totalTime = allDesignAlternatives.Sum(d => d.TimeTotal + timeAddedValue);
+
+                var totalConstructionsPerformances = totalCost + totalTime;
+
+                decimal energyAddedValue = allDesignAlternatives.Max(d => d.EnergyAddedValue);
+                var totalEnergy = allDesignAlternatives.Sum(d => d.EnergyTotal + energyAddedValue);
+
+                decimal maintenanceAddedValue = allDesignAlternatives.Max(d => d.MaintenanceAddedValue);
+                var totalMaintenance = allDesignAlternatives.Sum(d => d.MaintenanceTotal + maintenanceAddedValue);
+
+                var totalOperationPerformances = totalMaintenance + totalEnergy;
+
+                decimal aestheticsAddedValue = allDesignAlternatives.Max(d => d.AestheticsAddedValue);
+                var totalAestheticses = allDesignAlternatives.Sum(d => d.AestheticsTotal + aestheticsAddedValue);
 
                 if (totalScores > 0)
                 {
@@ -111,38 +127,41 @@ namespace DesignAlternatives.WinApp
                         designAlternative.Rank = rank++;
                         designAlternative.Percentage = decimal.Round((designAlternative.Score / totalScores) * 100m, 2, MidpointRounding.AwayFromZero);
 
-                        designAlternative.SpaceFunctionalityPercentage = totalSpaceFunctionalities > 0 ?
-                            decimal.Round((designAlternative.SpaceFunctionalityTotal / totalSpaceFunctionalities) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
-
-                        designAlternative.ConstructionPerformancePercentage = totalConstructionsPerformances > 0 ?
-                            decimal.Round((designAlternative.ConstructionPerformanceTotal / totalConstructionsPerformances) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
-
-                        designAlternative.OperationPerformancePercentage = totalOperationPerformances > 0 ?
-                            decimal.Round((designAlternative.OperationPerformanceTotal / totalOperationPerformances) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
-
-                        designAlternative.AestheticsPercentage = totalAestheticses > 0 ?
-                            decimal.Round((designAlternative.AestheticsTotal / totalAestheticses) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
-
                         designAlternative.AccessibilityPercentage = totalAccessibilities > 0 ?
-                            decimal.Round((designAlternative.AccessibilityTotal / totalAccessibilities) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+                            decimal.Round(((designAlternative.AccessibilityTotal + accessibilityAddedValue) / totalAccessibilities) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
 
                         designAlternative.RelationPercentage = totalRelations > 0 ?
-                           decimal.Round((designAlternative.AccessibilityTotal / totalRelations) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+                            decimal.Round(((designAlternative.RelationTotal + relationAddedValue) / totalRelations) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
 
                         designAlternative.SizePercentage = totalSizes > 0 ?
-                           decimal.Round((designAlternative.SizeTotal / totalSizes) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+                            decimal.Round(((designAlternative.SizeTotal + sizeAddedValue) / totalSizes) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.SpaceFunctionalityPercentage = totalSpaceFunctionalities > 0 ?
+                            decimal.Round(((designAlternative.SpaceFunctionalityTotal +
+                                accessibilityAddedValue + relationAddedValue + sizeAddedValue) / totalSpaceFunctionalities) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
 
                         designAlternative.CostPercentage = totalCost > 0 ?
-                          decimal.Round((designAlternative.SizeTotal / totalCost) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+                            decimal.Round(((designAlternative.CostTotal + costAddedValue) / totalCost) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
 
                         designAlternative.TimePercentage = totalTime > 0 ?
-                          decimal.Round((designAlternative.TimeTotal / totalTime) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+                            decimal.Round(((designAlternative.TimeTotal + timeAddedValue) / totalTime) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.ConstructionPerformancePercentage = totalConstructionsPerformances > 0 ?
+                            decimal.Round(((designAlternative.ConstructionPerformanceTotal +
+                                costAddedValue + timeAddedValue) / totalConstructionsPerformances) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
 
                         designAlternative.EnergyPercentage = totalEnergy > 0 ?
-                          decimal.Round((designAlternative.EnergyTotal / totalEnergy) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+                            decimal.Round(((designAlternative.EnergyTotal + energyAddedValue) / totalEnergy) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
 
                         designAlternative.MaintenancePercentage = totalMaintenance > 0 ?
-                          decimal.Round((designAlternative.MaintenanceTotal / totalMaintenance) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+                           decimal.Round(((designAlternative.MaintenanceTotal + maintenanceAddedValue) / totalMaintenance) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.OperationPerformancePercentage = totalOperationPerformances > 0 ?
+                            decimal.Round(((designAlternative.OperationPerformanceTotal +
+                                energyAddedValue + maintenanceAddedValue)/ totalOperationPerformances) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
+
+                        designAlternative.AestheticsPercentage = totalAestheticses > 0 ?
+                            decimal.Round(((designAlternative.AestheticsTotal + aestheticsAddedValue) / totalAestheticses) * 100m, 2, MidpointRounding.AwayFromZero) : 0;
                     }
                 }
                 designAlternativeResult = new DesignAlternativeResult(allDesignAlternatives);
@@ -151,6 +170,8 @@ namespace DesignAlternatives.WinApp
 
                 designAlternativeBindingSource.DataSource = allDesignAlternatives;
                 designAlternativeBindingSource.ResetBindings(false);
+
+                this.rdSpaceFunctionality.Checked = true;
             }
             catch (Exception ex)
             {
@@ -158,9 +179,13 @@ namespace DesignAlternatives.WinApp
             }
         }
 
-        private void btnSettings_Click(object sender, EventArgs e)
+        private async void btnSettings_Click(object sender, EventArgs e)
         {
-            new frmSettings().ShowDialog();
+           if(new frmSettings().ShowDialog() == DialogResult.OK)
+            {
+                await loadDesignOptions();
+                await refreshData();
+            }
         }
 
         private async void btnAdd_Click(object sender, EventArgs e)
@@ -239,6 +264,75 @@ namespace DesignAlternatives.WinApp
         private void button1_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 1;
+        }
+
+        private void btnResetDefaults_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+            Cursor = Cursors.WaitCursor;
+            var loadingForm = new frmLoading();
+            loadingForm.ShowDialog();
+            //Thread.Sleep(3000);
+
+            //System.Threading.Thread.CurrentThread.
+
+            Score.Visible = true;
+            Percentage.Visible = true;
+            Rank.Visible = true;
+
+            //MessageBox.Show("Ok");
+            //loadingForm.DialogResult = DialogResult.OK;
+
+            Cursor = Cursors.Default;
+        }
+
+        private void tabPage6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label57_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label59_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdSpaceFunctionality_CheckedChanged(object sender, EventArgs e)
+        {
+            var rd = sender as RadioButton;
+            if (!rd.Checked)
+            {
+                return;
+            }
+
+            if(rd == rdSpaceFunctionality)
+            {
+                lblBestCriteria.Text = designAlternativeResult.BestSpaceFunctionalityDesignName;
+                lblBestCriteriaPercentage.Text = designAlternativeResult.BestSpaceFunctionalityDesignPercentageText;
+            }
+            else if (rd == rdConstructionPerformance)
+            {
+                lblBestCriteria.Text = designAlternativeResult.BestConstructionPerformanceDesignName;
+                lblBestCriteriaPercentage.Text = designAlternativeResult.BestConstructionPerformanceDesignPercentageText;
+            }
+            else if (rd == rdOperationPerformance)
+            {
+                lblBestCriteria.Text = designAlternativeResult.BestOperationPerformanceDesignName;
+                lblBestCriteriaPercentage.Text = designAlternativeResult.BestOperationPerformanceDesignPercentageText;
+            }
+            else if (rd == rdAethiticas)
+            {
+                lblBestCriteria.Text = designAlternativeResult.BestAestheticsDesignName;
+                lblBestCriteriaPercentage.Text = designAlternativeResult.BestAestheticsDesignPercentageText;
+            }
         }
     }
 }

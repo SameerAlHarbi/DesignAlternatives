@@ -71,7 +71,13 @@ namespace DesignAlternatives.WinApp.Models
         public decimal AccessibilityResult => AccessibilityTotal * 0.102m;
 
         [NotMapped]
+        public decimal AccessibilityAddedValue => AccessibilityTotal < 0 ? (AccessibilityTotal * -1) + 1 : 0;
+
+        [NotMapped]
         public decimal AccessibilityPercentage { get; set; }
+
+        [NotMapped]
+        public string AccessibilityPercentageText => $"{AccessibilityPercentage}%";
 
         [NotMapped]
         public decimal RelationTotal => DesignOptionsList.Sum(d => d.Relation);
@@ -80,7 +86,13 @@ namespace DesignAlternatives.WinApp.Models
         public decimal RelationResult => RelationTotal * 0.106m;
 
         [NotMapped]
+        public decimal RelationAddedValue => RelationTotal < 0 ? (RelationTotal * -1) + 1 : 0;
+
+        [NotMapped]
         public decimal RelationPercentage { get; set; }
+
+        [NotMapped]
+        public string RelationPercentageText => $"{RelationPercentage}%";
 
         [NotMapped]
         public decimal SizeTotal => DesignOptionsList.Sum(d => d.Size);
@@ -89,7 +101,22 @@ namespace DesignAlternatives.WinApp.Models
         public decimal SizeResult => SizeTotal * 0.116m;
 
         [NotMapped]
+        public decimal SizeAddedValue => SizeTotal < 0 ? (SizeTotal * -1) + 1 : 0;
+
+        [NotMapped]
         public decimal SizePercentage { get; set; }
+
+        [NotMapped]
+        public string SizePercentageText => $"{SizePercentage}%";
+
+        [NotMapped]
+        public decimal SpaceFunctionalityTotal => AccessibilityTotal + RelationTotal + SizeTotal;
+
+        [NotMapped]
+        public decimal SpaceFunctionalityPercentage { get; set; }
+
+        [NotMapped]
+        public string SpaceFunctionalityPercentageText => $"{SpaceFunctionalityPercentage}%";
 
         [NotMapped]
         public decimal CostTotal => DesignOptionsList.Sum(d => d.Cost);
@@ -98,7 +125,13 @@ namespace DesignAlternatives.WinApp.Models
         public decimal CostResult => CostTotal * 0.140m;
 
         [NotMapped]
+        public decimal CostAddedValue => CostTotal < 0 ? (CostTotal * -1) + 1 : 0;
+
+        [NotMapped]
         public decimal CostPercentage { get; set; }
+
+        [NotMapped]
+        public string CostPercentageText => $"{CostPercentage}%";
 
         [NotMapped]
         public decimal TimeTotal => DesignOptionsList.Sum(d => d.Time);
@@ -107,7 +140,22 @@ namespace DesignAlternatives.WinApp.Models
         public decimal TimeResult => TimeTotal * 0.131m;
 
         [NotMapped]
+        public decimal TimeAddedValue => TimeTotal < 0 ? (TimeTotal * -1) + 1 : 0;
+
+        [NotMapped]
         public decimal TimePercentage { get; set; }
+
+        [NotMapped]
+        public string TimePercentageText => $"{TimePercentage}%";
+
+        [NotMapped]
+        public decimal ConstructionPerformanceTotal => CostTotal + TimeTotal;
+
+        [NotMapped]
+        public decimal ConstructionPerformancePercentage { get; set; }
+
+        [NotMapped]
+        public string ConstructionPerformancePercentageText => $"{ConstructionPerformancePercentage}%";
 
         [NotMapped]
         public decimal EnergyTotal => DesignOptionsList.Sum(d => d.Energy);
@@ -116,7 +164,13 @@ namespace DesignAlternatives.WinApp.Models
         public decimal EnergyResult => EnergyTotal * 0.143m;
 
         [NotMapped]
+        public decimal EnergyAddedValue => EnergyTotal < 0 ? (EnergyTotal * -1) + 1 : 0;
+
+        [NotMapped]
         public decimal EnergyPercentage { get; set; }
+
+        [NotMapped]
+        public string EnergyPercentageText => $"{EnergyPercentage}%";
 
         [NotMapped]
         public decimal MaintenanceTotal => DesignOptionsList.Sum(d => d.Maintenance);
@@ -125,7 +179,22 @@ namespace DesignAlternatives.WinApp.Models
         public decimal MaintenanceResult => MaintenanceTotal * 0.127m;
 
         [NotMapped]
+        public decimal MaintenanceAddedValue => MaintenanceTotal < 0 ? (MaintenanceTotal * -1) + 1 : 0;
+
+        [NotMapped]
         public decimal MaintenancePercentage { get; set; }
+
+        [NotMapped]
+        public string MaintenancePercentageText => $"{MaintenancePercentage}%";
+
+        [NotMapped]
+        public decimal OperationPerformanceTotal => EnergyTotal + MaintenanceTotal;
+
+        [NotMapped]
+        public decimal OperationPerformancePercentage { get; set; }
+
+        [NotMapped]
+        public string OperationPerformancePercentageText => $"{OperationPerformancePercentage}%";
 
         [NotMapped]
         public decimal AestheticsTotal => DesignOptionsList.Sum(d => d.Aesthetics);
@@ -134,11 +203,17 @@ namespace DesignAlternatives.WinApp.Models
         public decimal AestheticsResult => AestheticsTotal * 0.135m;
 
         [NotMapped]
+        public decimal AestheticsAddedValue => AestheticsTotal < 0 ? (AestheticsTotal * -1) + 1 : 0;
+
+        [NotMapped]
         public decimal AestheticsPercentage { get; set; }
 
         [NotMapped]
-        public decimal Score => AccessibilityResult + RelationResult + SizeResult
-            + CostResult + TimeResult + EnergyResult + MaintenanceResult + AestheticsResult;
+        public string AestheticsPercentageText => $"{AestheticsPercentage}%";
+
+        [NotMapped]
+        public decimal Score => decimal.Round(AccessibilityResult + RelationResult + SizeResult
+            + CostResult + TimeResult + EnergyResult + MaintenanceResult + AestheticsResult,2,System.MidpointRounding.AwayFromZero);
 
         [NotMapped]
         public decimal Percentage { get; set; }
@@ -148,24 +223,6 @@ namespace DesignAlternatives.WinApp.Models
 
         [NotMapped]
         public decimal Rank { get; set; }
-
-        [NotMapped]
-        public decimal SpaceFunctionalityTotal => AccessibilityTotal + RelationTotal + SizeTotal;
-
-        [NotMapped]
-        public decimal SpaceFunctionalityPercentage { get; set; }
-
-        [NotMapped]
-        public decimal ConstructionPerformanceTotal => CostTotal + TimeTotal;
-
-        [NotMapped]
-        public decimal ConstructionPerformancePercentage { get; set; }
-
-        [NotMapped]
-        public decimal OperationPerformanceTotal => EnergyTotal + MaintenanceTotal;
-
-        [NotMapped]
-        public decimal OperationPerformancePercentage { get; set; }
 
     }
 }

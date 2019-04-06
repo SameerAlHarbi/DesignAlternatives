@@ -44,7 +44,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.categoryDataGridView = new System.Windows.Forms.DataGridView();
             this.subCategoryDataGridView = new System.Windows.Forms.DataGridView();
+            this.subCategoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.designOptionDataGridView = new System.Windows.Forms.DataGridView();
+            this.designOptionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.aestheticsNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -60,12 +62,14 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
-            this.designOptionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.subCategoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnResetDefaults = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnResetDefaults = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             aestheticsLabel = new System.Windows.Forms.Label();
             maintenanceLabel = new System.Windows.Forms.Label();
@@ -77,7 +81,9 @@
             accessibilityLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.categoryDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.subCategoryDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subCategoriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.designOptionDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.designOptionsBindingSource)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aestheticsNumericUpDown)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -91,8 +97,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.relationNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accessibilityNumericUpDown)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.designOptionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.subCategoriesBindingSource)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -228,6 +234,11 @@
             this.subCategoryDataGridView.Size = new System.Drawing.Size(300, 241);
             this.subCategoryDataGridView.TabIndex = 1;
             // 
+            // subCategoriesBindingSource
+            // 
+            this.subCategoriesBindingSource.DataMember = "SubCategories";
+            this.subCategoriesBindingSource.DataSource = this.categoryBindingSource;
+            // 
             // designOptionDataGridView
             // 
             this.designOptionDataGridView.AllowUserToAddRows = false;
@@ -262,12 +273,17 @@
             this.designOptionDataGridView.Size = new System.Drawing.Size(300, 241);
             this.designOptionDataGridView.TabIndex = 2;
             // 
+            // designOptionsBindingSource
+            // 
+            this.designOptionsBindingSource.DataMember = "designOptions";
+            this.designOptionsBindingSource.DataSource = this.subCategoriesBindingSource;
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.aestheticsNumericUpDown);
             this.groupBox5.Controls.Add(aestheticsLabel);
             this.groupBox5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(631, 305);
+            this.groupBox5.Location = new System.Drawing.Point(631, 348);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
@@ -299,7 +315,7 @@
             this.groupBox3.Controls.Add(energyLabel);
             this.groupBox3.Controls.Add(this.energyNumericUpDown);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(424, 305);
+            this.groupBox3.Location = new System.Drawing.Point(424, 348);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
@@ -347,7 +363,7 @@
             this.groupBox2.Controls.Add(costLabel);
             this.groupBox2.Controls.Add(this.costNumericUpDown);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(217, 305);
+            this.groupBox2.Location = new System.Drawing.Point(217, 348);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
@@ -397,7 +413,7 @@
             this.groupBox1.Controls.Add(accessibilityLabel);
             this.groupBox1.Controls.Add(this.accessibilityNumericUpDown);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(10, 305);
+            this.groupBox1.Location = new System.Drawing.Point(10, 348);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -458,7 +474,7 @@
             // 
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(838, 306);
+            this.groupBox4.Location = new System.Drawing.Point(838, 349);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(95, 116);
             this.groupBox4.TabIndex = 7;
@@ -480,7 +496,7 @@
             // 
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Image = global::DesignAlternatives.WinApp.Properties.Resources.floppy_64;
-            this.btnSave.Location = new System.Drawing.Point(421, 445);
+            this.btnSave.Location = new System.Drawing.Point(421, 488);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(108, 81);
@@ -488,15 +504,59 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // designOptionsBindingSource
+            // btnResetDefaults
             // 
-            this.designOptionsBindingSource.DataMember = "designOptions";
-            this.designOptionsBindingSource.DataSource = this.subCategoriesBindingSource;
+            this.btnResetDefaults.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnResetDefaults.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnResetDefaults.Image = global::DesignAlternatives.WinApp.Properties.Resources.refresh64_2;
+            this.btnResetDefaults.Location = new System.Drawing.Point(10, 488);
+            this.btnResetDefaults.Name = "btnResetDefaults";
+            this.btnResetDefaults.Size = new System.Drawing.Size(100, 81);
+            this.btnResetDefaults.TabIndex = 9;
+            this.btnResetDefaults.UseVisualStyleBackColor = true;
+            this.btnResetDefaults.Click += new System.EventHandler(this.btnResetDefaults_Click);
             // 
-            // subCategoriesBindingSource
+            // groupBox6
             // 
-            this.subCategoriesBindingSource.DataMember = "SubCategories";
-            this.subCategoriesBindingSource.DataSource = this.categoryBindingSource;
+            this.groupBox6.Controls.Add(this.label2);
+            this.groupBox6.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.groupBox6.Location = new System.Drawing.Point(9, 275);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(458, 62);
+            this.groupBox6.TabIndex = 11;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Sub Category Description";
+            // 
+            // label2
+            // 
+            this.label2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.subCategoriesBindingSource, "Description", true));
+            this.label2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(8, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(446, 23);
+            this.label2.TabIndex = 0;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label3);
+            this.groupBox7.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.groupBox7.Location = new System.Drawing.Point(475, 275);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(458, 62);
+            this.groupBox7.TabIndex = 11;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Design Option Description";
+            // 
+            // label3
+            // 
+            this.label3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.designOptionsBindingSource, "Description", true));
+            this.label3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(4, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(446, 23);
+            this.label3.TabIndex = 0;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // categoryBindingSource
             // 
@@ -518,18 +578,6 @@
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // btnResetDefaults
-            // 
-            this.btnResetDefaults.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnResetDefaults.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnResetDefaults.Image = global::DesignAlternatives.WinApp.Properties.Resources.refresh64_2;
-            this.btnResetDefaults.Location = new System.Drawing.Point(10, 445);
-            this.btnResetDefaults.Name = "btnResetDefaults";
-            this.btnResetDefaults.Size = new System.Drawing.Size(100, 81);
-            this.btnResetDefaults.TabIndex = 9;
-            this.btnResetDefaults.UseVisualStyleBackColor = true;
-            this.btnResetDefaults.Click += new System.EventHandler(this.btnResetDefaults_Click);
-            // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -542,7 +590,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 543);
+            this.ClientSize = new System.Drawing.Size(950, 584);
+            this.Controls.Add(this.groupBox7);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox5);
@@ -560,7 +610,9 @@
             this.Load += new System.EventHandler(this.frmSettings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.categoryDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.subCategoryDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subCategoriesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.designOptionDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.designOptionsBindingSource)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aestheticsNumericUpDown)).EndInit();
@@ -578,8 +630,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.relationNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accessibilityNumericUpDown)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.designOptionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.subCategoriesBindingSource)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -612,5 +664,9 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label3;
     }
 }
