@@ -334,5 +334,10 @@ namespace DesignAlternatives.WinApp
                 lblBestCriteriaPercentage.Text = designAlternativeResult.BestAestheticsDesignPercentageText;
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new frmOptionDialog().ShowDialog();
+        }
     }
 }

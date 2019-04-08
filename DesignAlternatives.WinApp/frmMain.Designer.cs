@@ -40,6 +40,8 @@
             System.Windows.Forms.Label spanDimensionIdLabel;
             System.Windows.Forms.Label circulationAreaIdLabel;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.designAlternativeResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnSettings = new System.Windows.Forms.Button();
             this.designAlternativeDataGridView = new System.Windows.Forms.DataGridView();
@@ -233,6 +235,11 @@
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subCriteriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.subCriteriaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             planEfficiencyIdLabel = new System.Windows.Forms.Label();
             shapeComplexityIdLabel = new System.Windows.Forms.Label();
             numberOfStoreyIdLabel = new System.Windows.Forms.Label();
@@ -271,6 +278,7 @@
             this.tabPage4.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.groupBox14.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -282,6 +290,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView1)).BeginInit();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // planEfficiencyIdLabel
@@ -616,6 +626,7 @@
             this.button3.TabIndex = 26;
             this.button3.Text = "...";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -1236,7 +1247,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(125, 407);
+            this.button7.Location = new System.Drawing.Point(6, 625);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(189, 46);
             this.button7.TabIndex = 1;
@@ -1245,13 +1256,14 @@
             // 
             // groupBox14
             // 
+            this.groupBox14.Controls.Add(this.subCriteriaDataGridView);
             this.groupBox14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox14.Location = new System.Drawing.Point(742, 38);
+            this.groupBox14.Location = new System.Drawing.Point(761, 18);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(377, 235);
+            this.groupBox14.Size = new System.Drawing.Size(432, 235);
             this.groupBox14.TabIndex = 1;
             this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Best Design ( Sub Criteria )";
+            this.groupBox14.Text = "Best Design ( Sub-Criteria )";
             // 
             // groupBox13
             // 
@@ -1259,7 +1271,7 @@
             this.groupBox13.Controls.Add(this.lblBestCriteriaPercentage);
             this.groupBox13.Controls.Add(this.lblBestCriteria);
             this.groupBox13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox13.Location = new System.Drawing.Point(345, 38);
+            this.groupBox13.Location = new System.Drawing.Point(358, 18);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(391, 235);
             this.groupBox13.TabIndex = 1;
@@ -1307,7 +1319,7 @@
             this.groupBox12.Controls.Add(this.rdConstructionPerformance);
             this.groupBox12.Controls.Add(this.rdSpaceFunctionality);
             this.groupBox12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox12.Location = new System.Drawing.Point(12, 38);
+            this.groupBox12.Location = new System.Drawing.Point(18, 18);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(327, 235);
             this.groupBox12.TabIndex = 0;
@@ -2483,6 +2495,63 @@
             this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
             this.dataGridViewTextBoxColumn30.ReadOnly = true;
             // 
+            // subCriteriaBindingSource
+            // 
+            this.subCriteriaBindingSource.DataSource = typeof(DesignAlternatives.WinApp.Models.SubCriteria);
+            // 
+            // subCriteriaDataGridView
+            // 
+            this.subCriteriaDataGridView.AllowUserToAddRows = false;
+            this.subCriteriaDataGridView.AllowUserToDeleteRows = false;
+            this.subCriteriaDataGridView.AutoGenerateColumns = false;
+            this.subCriteriaDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.subCriteriaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.subCriteriaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn7});
+            this.subCriteriaDataGridView.DataSource = this.subCriteriaBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.subCriteriaDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.subCriteriaDataGridView.Location = new System.Drawing.Point(13, 30);
+            this.subCriteriaDataGridView.Name = "subCriteriaDataGridView";
+            this.subCriteriaDataGridView.ReadOnly = true;
+            this.subCriteriaDataGridView.RowHeadersVisible = false;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subCriteriaDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.subCriteriaDataGridView.Size = new System.Drawing.Size(407, 178);
+            this.subCriteriaDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Best-Criteria";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "BestDesignName";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Best Design";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 130;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "BestDesignRelativeIndex";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Percentage (%)";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 130;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2532,6 +2601,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage6.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.groupBox12.ResumeLayout(false);
@@ -2550,6 +2620,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView1)).EndInit();
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2749,6 +2821,11 @@
         private System.Windows.Forms.Label lblBestCriteria;
         private System.Windows.Forms.Label lblBestCriteriaPercentage;
         private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.DataGridView subCriteriaDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.BindingSource subCriteriaBindingSource;
     }
 }
 
