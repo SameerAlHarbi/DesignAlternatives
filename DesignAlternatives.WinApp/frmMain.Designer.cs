@@ -40,8 +40,6 @@
             System.Windows.Forms.Label spanDimensionIdLabel;
             System.Windows.Forms.Label circulationAreaIdLabel;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.designAlternativeResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnSettings = new System.Windows.Forms.Button();
             this.designAlternativeDataGridView = new System.Windows.Forms.DataGridView();
@@ -108,19 +106,20 @@
             this.circulationAreaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnSave = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btnResetDefaults = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnCalc = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.subCriteriaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subCriteriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.label59 = new System.Windows.Forms.Label();
             this.lblBestCriteriaPercentage = new System.Windows.Forms.Label();
@@ -182,64 +181,6 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.designAlternativeDataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn50 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn60 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.designAlternativeDataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subCriteriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.subCriteriaDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             planEfficiencyIdLabel = new System.Windows.Forms.Label();
             shapeComplexityIdLabel = new System.Windows.Forms.Label();
             numberOfStoreyIdLabel = new System.Windows.Forms.Label();
@@ -279,6 +220,8 @@
             this.tabPage1.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaBindingSource)).BeginInit();
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -286,12 +229,6 @@
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView1)).BeginInit();
-            this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // planEfficiencyIdLabel
@@ -1091,27 +1028,12 @@
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "Description";
             // 
-            // btnResetDefaults
-            // 
-            this.btnResetDefaults.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnResetDefaults.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnResetDefaults.Image = global::DesignAlternatives.WinApp.Properties.Resources.refresh64_2;
-            this.btnResetDefaults.Location = new System.Drawing.Point(14, 568);
-            this.btnResetDefaults.Name = "btnResetDefaults";
-            this.btnResetDefaults.Size = new System.Drawing.Size(108, 91);
-            this.btnResetDefaults.TabIndex = 25;
-            this.toolTip1.SetToolTip(this.btnResetDefaults, "Reset to default designs");
-            this.btnResetDefaults.UseVisualStyleBackColor = true;
-            this.btnResetDefaults.Click += new System.EventHandler(this.btnResetDefaults_Click);
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
@@ -1122,8 +1044,6 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.button1);
-            this.tabPage4.Controls.Add(this.label46);
-            this.tabPage4.Controls.Add(this.label45);
             this.tabPage4.Controls.Add(this.label44);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
@@ -1149,43 +1069,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label46.Location = new System.Drawing.Point(479, 170);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(253, 29);
-            this.label46.TabIndex = 24;
-            this.label46.Text = "Mr. Abdullah Al Saggaf";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label45.Location = new System.Drawing.Point(586, 122);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(39, 29);
-            this.label45.TabIndex = 24;
-            this.label45.Text = "By";
-            // 
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Font = new System.Drawing.Font("Tahoma", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label44.Location = new System.Drawing.Point(404, 45);
+            this.label44.Location = new System.Drawing.Point(173, 151);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(402, 39);
+            this.label44.Size = new System.Drawing.Size(865, 46);
             this.label44.TabIndex = 24;
-            this.label44.Text = "Design Alternatives System";
+            this.label44.Text = "The Architectural Design Decision Support System";
+            this.label44.Click += new System.EventHandler(this.label44_Click);
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.btnCalc);
-            this.tabPage1.Controls.Add(this.btnResetDefaults);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.btnAdd);
             this.tabPage1.Controls.Add(this.nudAlternativesNumber);
@@ -1232,7 +1130,6 @@
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.button7);
             this.tabPage6.Controls.Add(this.groupBox14);
             this.tabPage6.Controls.Add(this.groupBox13);
             this.tabPage6.Controls.Add(this.groupBox12);
@@ -1245,25 +1142,63 @@
             this.tabPage6.UseVisualStyleBackColor = true;
             this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(6, 625);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(189, 46);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // groupBox14
             // 
             this.groupBox14.Controls.Add(this.subCriteriaDataGridView);
             this.groupBox14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox14.Location = new System.Drawing.Point(761, 18);
+            this.groupBox14.Location = new System.Drawing.Point(717, 18);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(432, 235);
-            this.groupBox14.TabIndex = 1;
+            this.groupBox14.Size = new System.Drawing.Size(478, 235);
+            this.groupBox14.TabIndex = 2;
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Best Design ( Sub-Criteria )";
+            // 
+            // subCriteriaDataGridView
+            // 
+            this.subCriteriaDataGridView.AllowUserToAddRows = false;
+            this.subCriteriaDataGridView.AllowUserToDeleteRows = false;
+            this.subCriteriaDataGridView.AutoGenerateColumns = false;
+            this.subCriteriaDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.subCriteriaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.subCriteriaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn7});
+            this.subCriteriaDataGridView.DataSource = this.subCriteriaBindingSource;
+            this.subCriteriaDataGridView.Location = new System.Drawing.Point(6, 22);
+            this.subCriteriaDataGridView.Name = "subCriteriaDataGridView";
+            this.subCriteriaDataGridView.ReadOnly = true;
+            this.subCriteriaDataGridView.RowHeadersVisible = false;
+            this.subCriteriaDataGridView.Size = new System.Drawing.Size(466, 207);
+            this.subCriteriaDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Sub-Criteria";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "BestDesignName";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Best Design";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 130;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "BestDesignRelativeIndex";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Percentage %";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 140;
+            // 
+            // subCriteriaBindingSource
+            // 
+            this.subCriteriaBindingSource.DataSource = typeof(DesignAlternatives.WinApp.Models.SubCriteria);
             // 
             // groupBox13
             // 
@@ -1273,7 +1208,7 @@
             this.groupBox13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox13.Location = new System.Drawing.Point(358, 18);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(391, 235);
+            this.groupBox13.Size = new System.Drawing.Size(353, 235);
             this.groupBox13.TabIndex = 1;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Best Design ( Criteria )";
@@ -1283,7 +1218,7 @@
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label59.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label59.Location = new System.Drawing.Point(134, 129);
+            this.label59.Location = new System.Drawing.Point(115, 129);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(122, 17);
             this.label59.TabIndex = 2;
@@ -1294,7 +1229,7 @@
             // 
             this.lblBestCriteriaPercentage.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBestCriteriaPercentage.ForeColor = System.Drawing.Color.Green;
-            this.lblBestCriteriaPercentage.Location = new System.Drawing.Point(96, 153);
+            this.lblBestCriteriaPercentage.Location = new System.Drawing.Point(77, 153);
             this.lblBestCriteriaPercentage.Name = "lblBestCriteriaPercentage";
             this.lblBestCriteriaPercentage.Size = new System.Drawing.Size(198, 55);
             this.lblBestCriteriaPercentage.TabIndex = 1;
@@ -1305,7 +1240,7 @@
             // 
             this.lblBestCriteria.Font = new System.Drawing.Font("Tahoma", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBestCriteria.ForeColor = System.Drawing.Color.Blue;
-            this.lblBestCriteria.Location = new System.Drawing.Point(96, 30);
+            this.lblBestCriteria.Location = new System.Drawing.Point(77, 30);
             this.lblBestCriteria.Name = "lblBestCriteria";
             this.lblBestCriteria.Size = new System.Drawing.Size(198, 81);
             this.lblBestCriteria.TabIndex = 1;
@@ -2053,505 +1988,6 @@
             this.label7.TabIndex = 23;
             this.label7.Text = "Best Design for Each Quality Criteria/Sub-Criteria";
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.designAlternativeDataGridView1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1211, 677);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // designAlternativeDataGridView1
-            // 
-            this.designAlternativeDataGridView1.AllowUserToAddRows = false;
-            this.designAlternativeDataGridView1.AllowUserToDeleteRows = false;
-            this.designAlternativeDataGridView1.AutoGenerateColumns = false;
-            this.designAlternativeDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.designAlternativeDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn33,
-            this.dataGridViewTextBoxColumn34,
-            this.dataGridViewTextBoxColumn35,
-            this.dataGridViewTextBoxColumn36,
-            this.dataGridViewTextBoxColumn37,
-            this.dataGridViewTextBoxColumn38,
-            this.dataGridViewTextBoxColumn39,
-            this.dataGridViewTextBoxColumn40,
-            this.dataGridViewTextBoxColumn41,
-            this.dataGridViewTextBoxColumn42,
-            this.dataGridViewTextBoxColumn43,
-            this.dataGridViewTextBoxColumn44,
-            this.dataGridViewTextBoxColumn45,
-            this.dataGridViewTextBoxColumn46,
-            this.dataGridViewTextBoxColumn47,
-            this.dataGridViewTextBoxColumn48,
-            this.dataGridViewTextBoxColumn49,
-            this.dataGridViewTextBoxColumn50,
-            this.dataGridViewTextBoxColumn51,
-            this.dataGridViewTextBoxColumn52,
-            this.dataGridViewTextBoxColumn53,
-            this.dataGridViewTextBoxColumn54,
-            this.dataGridViewTextBoxColumn55,
-            this.dataGridViewTextBoxColumn56,
-            this.dataGridViewTextBoxColumn57,
-            this.dataGridViewTextBoxColumn58,
-            this.dataGridViewTextBoxColumn59,
-            this.dataGridViewTextBoxColumn60,
-            this.dataGridViewTextBoxColumn61,
-            this.dataGridViewTextBoxColumn62,
-            this.dataGridViewTextBoxColumn63,
-            this.dataGridViewTextBoxColumn64,
-            this.dataGridViewTextBoxColumn65,
-            this.dataGridViewTextBoxColumn66});
-            this.designAlternativeDataGridView1.DataSource = this.designAlternativeBindingSource;
-            this.designAlternativeDataGridView1.Location = new System.Drawing.Point(6, 15);
-            this.designAlternativeDataGridView1.Name = "designAlternativeDataGridView1";
-            this.designAlternativeDataGridView1.ReadOnly = true;
-            this.designAlternativeDataGridView1.Size = new System.Drawing.Size(1185, 532);
-            this.designAlternativeDataGridView1.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Description";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Description";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "AccessibilityTotal";
-            this.dataGridViewTextBoxColumn33.HeaderText = "AccessibilityTotal";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "AccessibilityResult";
-            this.dataGridViewTextBoxColumn34.HeaderText = "AccessibilityResult";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn35
-            // 
-            this.dataGridViewTextBoxColumn35.DataPropertyName = "AccessibilityPercentage";
-            this.dataGridViewTextBoxColumn35.HeaderText = "AccessibilityPercentage";
-            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
-            this.dataGridViewTextBoxColumn35.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn36
-            // 
-            this.dataGridViewTextBoxColumn36.DataPropertyName = "RelationTotal";
-            this.dataGridViewTextBoxColumn36.HeaderText = "RelationTotal";
-            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
-            this.dataGridViewTextBoxColumn36.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn37
-            // 
-            this.dataGridViewTextBoxColumn37.DataPropertyName = "RelationResult";
-            this.dataGridViewTextBoxColumn37.HeaderText = "RelationResult";
-            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
-            this.dataGridViewTextBoxColumn37.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn38
-            // 
-            this.dataGridViewTextBoxColumn38.DataPropertyName = "RelationPercentage";
-            this.dataGridViewTextBoxColumn38.HeaderText = "RelationPercentage";
-            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
-            this.dataGridViewTextBoxColumn38.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn39
-            // 
-            this.dataGridViewTextBoxColumn39.DataPropertyName = "SizeTotal";
-            this.dataGridViewTextBoxColumn39.HeaderText = "SizeTotal";
-            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
-            this.dataGridViewTextBoxColumn39.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn40
-            // 
-            this.dataGridViewTextBoxColumn40.DataPropertyName = "SizeResult";
-            this.dataGridViewTextBoxColumn40.HeaderText = "SizeResult";
-            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
-            this.dataGridViewTextBoxColumn40.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn41
-            // 
-            this.dataGridViewTextBoxColumn41.DataPropertyName = "SizePercentage";
-            this.dataGridViewTextBoxColumn41.HeaderText = "SizePercentage";
-            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
-            this.dataGridViewTextBoxColumn41.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn42
-            // 
-            this.dataGridViewTextBoxColumn42.DataPropertyName = "CostTotal";
-            this.dataGridViewTextBoxColumn42.HeaderText = "CostTotal";
-            this.dataGridViewTextBoxColumn42.Name = "dataGridViewTextBoxColumn42";
-            this.dataGridViewTextBoxColumn42.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn43
-            // 
-            this.dataGridViewTextBoxColumn43.DataPropertyName = "CostResult";
-            this.dataGridViewTextBoxColumn43.HeaderText = "CostResult";
-            this.dataGridViewTextBoxColumn43.Name = "dataGridViewTextBoxColumn43";
-            this.dataGridViewTextBoxColumn43.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn44
-            // 
-            this.dataGridViewTextBoxColumn44.DataPropertyName = "CostPercentage";
-            this.dataGridViewTextBoxColumn44.HeaderText = "CostPercentage";
-            this.dataGridViewTextBoxColumn44.Name = "dataGridViewTextBoxColumn44";
-            this.dataGridViewTextBoxColumn44.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn45
-            // 
-            this.dataGridViewTextBoxColumn45.DataPropertyName = "TimeTotal";
-            this.dataGridViewTextBoxColumn45.HeaderText = "TimeTotal";
-            this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
-            this.dataGridViewTextBoxColumn45.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn46
-            // 
-            this.dataGridViewTextBoxColumn46.DataPropertyName = "TimeResult";
-            this.dataGridViewTextBoxColumn46.HeaderText = "TimeResult";
-            this.dataGridViewTextBoxColumn46.Name = "dataGridViewTextBoxColumn46";
-            this.dataGridViewTextBoxColumn46.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn47
-            // 
-            this.dataGridViewTextBoxColumn47.DataPropertyName = "TimePercentage";
-            this.dataGridViewTextBoxColumn47.HeaderText = "TimePercentage";
-            this.dataGridViewTextBoxColumn47.Name = "dataGridViewTextBoxColumn47";
-            this.dataGridViewTextBoxColumn47.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn48
-            // 
-            this.dataGridViewTextBoxColumn48.DataPropertyName = "EnergyTotal";
-            this.dataGridViewTextBoxColumn48.HeaderText = "EnergyTotal";
-            this.dataGridViewTextBoxColumn48.Name = "dataGridViewTextBoxColumn48";
-            this.dataGridViewTextBoxColumn48.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn49
-            // 
-            this.dataGridViewTextBoxColumn49.DataPropertyName = "EnergyResult";
-            this.dataGridViewTextBoxColumn49.HeaderText = "EnergyResult";
-            this.dataGridViewTextBoxColumn49.Name = "dataGridViewTextBoxColumn49";
-            this.dataGridViewTextBoxColumn49.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn50
-            // 
-            this.dataGridViewTextBoxColumn50.DataPropertyName = "EnergyPercentage";
-            this.dataGridViewTextBoxColumn50.HeaderText = "EnergyPercentage";
-            this.dataGridViewTextBoxColumn50.Name = "dataGridViewTextBoxColumn50";
-            this.dataGridViewTextBoxColumn50.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn51
-            // 
-            this.dataGridViewTextBoxColumn51.DataPropertyName = "MaintenanceTotal";
-            this.dataGridViewTextBoxColumn51.HeaderText = "MaintenanceTotal";
-            this.dataGridViewTextBoxColumn51.Name = "dataGridViewTextBoxColumn51";
-            this.dataGridViewTextBoxColumn51.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn52
-            // 
-            this.dataGridViewTextBoxColumn52.DataPropertyName = "MaintenanceResult";
-            this.dataGridViewTextBoxColumn52.HeaderText = "MaintenanceResult";
-            this.dataGridViewTextBoxColumn52.Name = "dataGridViewTextBoxColumn52";
-            this.dataGridViewTextBoxColumn52.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn53
-            // 
-            this.dataGridViewTextBoxColumn53.DataPropertyName = "MaintenancePercentage";
-            this.dataGridViewTextBoxColumn53.HeaderText = "MaintenancePercentage";
-            this.dataGridViewTextBoxColumn53.Name = "dataGridViewTextBoxColumn53";
-            this.dataGridViewTextBoxColumn53.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn54
-            // 
-            this.dataGridViewTextBoxColumn54.DataPropertyName = "AestheticsTotal";
-            this.dataGridViewTextBoxColumn54.HeaderText = "AestheticsTotal";
-            this.dataGridViewTextBoxColumn54.Name = "dataGridViewTextBoxColumn54";
-            this.dataGridViewTextBoxColumn54.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn55
-            // 
-            this.dataGridViewTextBoxColumn55.DataPropertyName = "AestheticsResult";
-            this.dataGridViewTextBoxColumn55.HeaderText = "AestheticsResult";
-            this.dataGridViewTextBoxColumn55.Name = "dataGridViewTextBoxColumn55";
-            this.dataGridViewTextBoxColumn55.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn56
-            // 
-            this.dataGridViewTextBoxColumn56.DataPropertyName = "AestheticsPercentage";
-            this.dataGridViewTextBoxColumn56.HeaderText = "AestheticsPercentage";
-            this.dataGridViewTextBoxColumn56.Name = "dataGridViewTextBoxColumn56";
-            this.dataGridViewTextBoxColumn56.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn57
-            // 
-            this.dataGridViewTextBoxColumn57.DataPropertyName = "Score";
-            this.dataGridViewTextBoxColumn57.HeaderText = "Score";
-            this.dataGridViewTextBoxColumn57.Name = "dataGridViewTextBoxColumn57";
-            this.dataGridViewTextBoxColumn57.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn58
-            // 
-            this.dataGridViewTextBoxColumn58.DataPropertyName = "Percentage";
-            this.dataGridViewTextBoxColumn58.HeaderText = "Percentage";
-            this.dataGridViewTextBoxColumn58.Name = "dataGridViewTextBoxColumn58";
-            this.dataGridViewTextBoxColumn58.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn59
-            // 
-            this.dataGridViewTextBoxColumn59.DataPropertyName = "PercentageText";
-            this.dataGridViewTextBoxColumn59.HeaderText = "PercentageText";
-            this.dataGridViewTextBoxColumn59.Name = "dataGridViewTextBoxColumn59";
-            this.dataGridViewTextBoxColumn59.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn60
-            // 
-            this.dataGridViewTextBoxColumn60.DataPropertyName = "Rank";
-            this.dataGridViewTextBoxColumn60.HeaderText = "Rank";
-            this.dataGridViewTextBoxColumn60.Name = "dataGridViewTextBoxColumn60";
-            this.dataGridViewTextBoxColumn60.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn61
-            // 
-            this.dataGridViewTextBoxColumn61.DataPropertyName = "SpaceFunctionalityTotal";
-            this.dataGridViewTextBoxColumn61.HeaderText = "SpaceFunctionalityTotal";
-            this.dataGridViewTextBoxColumn61.Name = "dataGridViewTextBoxColumn61";
-            this.dataGridViewTextBoxColumn61.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn62
-            // 
-            this.dataGridViewTextBoxColumn62.DataPropertyName = "SpaceFunctionalityPercentage";
-            this.dataGridViewTextBoxColumn62.HeaderText = "SpaceFunctionalityPercentage";
-            this.dataGridViewTextBoxColumn62.Name = "dataGridViewTextBoxColumn62";
-            this.dataGridViewTextBoxColumn62.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn63
-            // 
-            this.dataGridViewTextBoxColumn63.DataPropertyName = "ConstructionPerformanceTotal";
-            this.dataGridViewTextBoxColumn63.HeaderText = "ConstructionPerformanceTotal";
-            this.dataGridViewTextBoxColumn63.Name = "dataGridViewTextBoxColumn63";
-            this.dataGridViewTextBoxColumn63.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn64
-            // 
-            this.dataGridViewTextBoxColumn64.DataPropertyName = "ConstructionPerformancePercentage";
-            this.dataGridViewTextBoxColumn64.HeaderText = "ConstructionPerformancePercentage";
-            this.dataGridViewTextBoxColumn64.Name = "dataGridViewTextBoxColumn64";
-            this.dataGridViewTextBoxColumn64.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn65
-            // 
-            this.dataGridViewTextBoxColumn65.DataPropertyName = "OperationPerformanceTotal";
-            this.dataGridViewTextBoxColumn65.HeaderText = "OperationPerformanceTotal";
-            this.dataGridViewTextBoxColumn65.Name = "dataGridViewTextBoxColumn65";
-            this.dataGridViewTextBoxColumn65.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn66
-            // 
-            this.dataGridViewTextBoxColumn66.DataPropertyName = "OperationPerformancePercentage";
-            this.dataGridViewTextBoxColumn66.HeaderText = "OperationPerformancePercentage";
-            this.dataGridViewTextBoxColumn66.Name = "dataGridViewTextBoxColumn66";
-            this.dataGridViewTextBoxColumn66.ReadOnly = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.designAlternativeDataGridView2);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1211, 677);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "tabPage5";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // designAlternativeDataGridView2
-            // 
-            this.designAlternativeDataGridView2.AllowUserToAddRows = false;
-            this.designAlternativeDataGridView2.AllowUserToDeleteRows = false;
-            this.designAlternativeDataGridView2.AutoGenerateColumns = false;
-            this.designAlternativeDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.designAlternativeDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn20,
-            this.dataGridViewTextBoxColumn22,
-            this.dataGridViewTextBoxColumn24,
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn28,
-            this.dataGridViewTextBoxColumn30});
-            this.designAlternativeDataGridView2.DataSource = this.designAlternativeBindingSource;
-            this.designAlternativeDataGridView2.Location = new System.Drawing.Point(6, 6);
-            this.designAlternativeDataGridView2.Name = "designAlternativeDataGridView2";
-            this.designAlternativeDataGridView2.ReadOnly = true;
-            this.designAlternativeDataGridView2.Size = new System.Drawing.Size(1199, 220);
-            this.designAlternativeDataGridView2.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Description";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Description";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "RelatedToWind";
-            this.dataGridViewTextBoxColumn8.HeaderText = "RelatedToWind";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "RelatedToView";
-            this.dataGridViewTextBoxColumn10.HeaderText = "RelatedToView";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "BuildingForm";
-            this.dataGridViewTextBoxColumn12.HeaderText = "BuildingForm";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "FacadeMaterial";
-            this.dataGridViewTextBoxColumn14.HeaderText = "FacadeMaterial";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "GlazingPercentage";
-            this.dataGridViewTextBoxColumn16.HeaderText = "GlazingPercentage";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "PlanEfficiency";
-            this.dataGridViewTextBoxColumn18.HeaderText = "PlanEfficiency";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "ShapeComplexity";
-            this.dataGridViewTextBoxColumn20.HeaderText = "ShapeComplexity";
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "NumberOfStorey";
-            this.dataGridViewTextBoxColumn22.HeaderText = "NumberOfStorey";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "AverageStoreyHeight";
-            this.dataGridViewTextBoxColumn24.HeaderText = "AverageStoreyHeight";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "GlazingShape";
-            this.dataGridViewTextBoxColumn26.HeaderText = "GlazingShape";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "GlazingEfficiency";
-            this.dataGridViewTextBoxColumn28.HeaderText = "GlazingEfficiency";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "SunBreakersGeometry";
-            this.dataGridViewTextBoxColumn30.HeaderText = "SunBreakersGeometry";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.ReadOnly = true;
-            // 
-            // subCriteriaBindingSource
-            // 
-            this.subCriteriaBindingSource.DataSource = typeof(DesignAlternatives.WinApp.Models.SubCriteria);
-            // 
-            // subCriteriaDataGridView
-            // 
-            this.subCriteriaDataGridView.AllowUserToAddRows = false;
-            this.subCriteriaDataGridView.AllowUserToDeleteRows = false;
-            this.subCriteriaDataGridView.AutoGenerateColumns = false;
-            this.subCriteriaDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.subCriteriaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.subCriteriaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn7});
-            this.subCriteriaDataGridView.DataSource = this.subCriteriaBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.subCriteriaDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.subCriteriaDataGridView.Location = new System.Drawing.Point(13, 30);
-            this.subCriteriaDataGridView.Name = "subCriteriaDataGridView";
-            this.subCriteriaDataGridView.ReadOnly = true;
-            this.subCriteriaDataGridView.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subCriteriaDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.subCriteriaDataGridView.Size = new System.Drawing.Size(407, 178);
-            this.subCriteriaDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Best-Criteria";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "BestDesignName";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Best Design";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 130;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "BestDesignRelativeIndex";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Percentage (%)";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 130;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2602,6 +2038,8 @@
             this.tabPage1.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaBindingSource)).EndInit();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.groupBox12.ResumeLayout(false);
@@ -2616,12 +2054,6 @@
             this.groupBox9.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView1)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.designAlternativeDataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.subCriteriaDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2686,44 +2118,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.BindingSource designAlternativeResultBindingSource;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.DataGridView designAlternativeDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn42;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn43;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn44;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn45;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn46;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn47;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn48;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn49;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn50;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn51;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn52;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn53;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn54;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn55;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn56;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn57;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn58;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn59;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn60;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn61;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn62;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn63;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn64;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn65;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn66;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label43;
@@ -2771,11 +2165,8 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnResetDefaults;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button6;
@@ -2794,21 +2185,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Percentage;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rank;
         private System.Windows.Forms.Button btnCalc;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.DataGridView designAlternativeDataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.RadioButton rdAethiticas;
@@ -2816,16 +2192,15 @@
         private System.Windows.Forms.RadioButton rdConstructionPerformance;
         private System.Windows.Forms.RadioButton rdSpaceFunctionality;
         private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.Label lblBestCriteria;
         private System.Windows.Forms.Label lblBestCriteriaPercentage;
         private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.BindingSource subCriteriaBindingSource;
+        private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.DataGridView subCriteriaDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.BindingSource subCriteriaBindingSource;
     }
 }
 

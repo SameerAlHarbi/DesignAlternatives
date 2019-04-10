@@ -181,11 +181,12 @@ namespace DesignAlternatives.WinApp
 
         private async void btnSettings_Click(object sender, EventArgs e)
         {
-           if(new frmSettings().ShowDialog() == DialogResult.OK)
-            {
+            //if(new frmSettings().ShowDialog() == DialogResult.OK)
+            // {
+            new frmSettings().ShowDialog();
                 await loadDesignOptions();
                 await refreshData();
-            }
+            //}
         }
 
         private async void btnAdd_Click(object sender, EventArgs e)
@@ -313,31 +314,101 @@ namespace DesignAlternatives.WinApp
                 return;
             }
 
+            var subCriterias = new List<SubCriteria>()
+            {
+                new SubCriteria
+                {
+                    Name="Accessibility",
+                    BestDesignName = designAlternativeResult.BestAccessibilityDesignName,
+                    BestDesignRelativeIndex = designAlternativeResult.BestAccessibilityDesignPercentageText,
+                    Criteria = "Space"
+                },
+                new SubCriteria
+                {
+                    Name="Relation",
+                    BestDesignName = designAlternativeResult.BestRelationDesignName,
+                    BestDesignRelativeIndex = designAlternativeResult.BestRelationDesignPercentageText,
+                    Criteria = "Space"
+                },
+                new SubCriteria
+                {
+                    Name="Size",
+                    BestDesignName = designAlternativeResult.BestSizeDesignName,
+                    BestDesignRelativeIndex = designAlternativeResult.BestSizeDesignPercentageText,
+                    Criteria = "Space"
+                },
+                new SubCriteria
+                {
+                    Name="Cost",
+                    BestDesignName = designAlternativeResult.BestCosteDesignName,
+                    BestDesignRelativeIndex = designAlternativeResult.BestCosteDesignPercentageText,
+                    Criteria = "Construction"
+                },
+                new SubCriteria
+                {
+                    Name="Time",
+                    BestDesignName = designAlternativeResult.BestTimeDesignName,
+                    BestDesignRelativeIndex = designAlternativeResult.BestTimeDesignPercentageText,
+                    Criteria = "Construction"
+                },
+                new SubCriteria
+                {
+                    Name="Energy",
+                    BestDesignName = designAlternativeResult.BestEnergyDesignName,
+                    BestDesignRelativeIndex = designAlternativeResult.BestEnergyDesignPercentageText,
+                    Criteria = "Operation"
+                },
+                new SubCriteria
+                {
+                    Name="Maintenance",
+                    BestDesignName = designAlternativeResult.BestMaintenanceDesignName,
+                    BestDesignRelativeIndex = designAlternativeResult.BestMaintenanceDesignPercentageText,
+                    Criteria = "Operation"
+                },
+            };
+
+            string selectedCriteria = "";
+
             if(rd == rdSpaceFunctionality)
             {
                 lblBestCriteria.Text = designAlternativeResult.BestSpaceFunctionalityDesignName;
                 lblBestCriteriaPercentage.Text = designAlternativeResult.BestSpaceFunctionalityDesignPercentageText;
+
+                selectedCriteria = "Space";
             }
             else if (rd == rdConstructionPerformance)
             {
                 lblBestCriteria.Text = designAlternativeResult.BestConstructionPerformanceDesignName;
                 lblBestCriteriaPercentage.Text = designAlternativeResult.BestConstructionPerformanceDesignPercentageText;
+
+                selectedCriteria = "Construction";
             }
             else if (rd == rdOperationPerformance)
             {
                 lblBestCriteria.Text = designAlternativeResult.BestOperationPerformanceDesignName;
                 lblBestCriteriaPercentage.Text = designAlternativeResult.BestOperationPerformanceDesignPercentageText;
+
+                selectedCriteria = "Operation";
             }
             else if (rd == rdAethiticas)
             {
                 lblBestCriteria.Text = designAlternativeResult.BestAestheticsDesignName;
                 lblBestCriteriaPercentage.Text = designAlternativeResult.BestAestheticsDesignPercentageText;
             }
+
+
+            subCriteriaBindingSource.DataSource = subCriterias.Where(s => s.Criteria == selectedCriteria).ToList();
+            subCriteriaBindingSource.ResetBindings(false);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             new frmOptionDialog().ShowDialog();
+        }
+
+        private void label44_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
