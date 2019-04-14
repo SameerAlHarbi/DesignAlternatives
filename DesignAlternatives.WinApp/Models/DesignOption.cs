@@ -14,6 +14,7 @@
 
         public SubCategory SubCategory { get; set; }
 
+
         #region Space Functionality
 
         public decimal Accessibility { get; set; }
