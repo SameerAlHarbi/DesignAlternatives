@@ -27,7 +27,6 @@ namespace DesignAlternatives.WinApp
         {
             await loadDesignOptions();
             await refreshData();
-           
         }
 
         private async Task loadDesignOptions()

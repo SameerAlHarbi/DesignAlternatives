@@ -181,6 +181,7 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             planEfficiencyIdLabel = new System.Windows.Forms.Label();
             shapeComplexityIdLabel = new System.Windows.Forms.Label();
             numberOfStoreyIdLabel = new System.Windows.Forms.Label();
@@ -229,6 +230,7 @@
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // planEfficiencyIdLabel
@@ -373,7 +375,7 @@
             this.designAlternativeDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.designAlternativeDataGridView.RowTemplate.Height = 35;
             this.designAlternativeDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.designAlternativeDataGridView.Size = new System.Drawing.Size(386, 455);
+            this.designAlternativeDataGridView.Size = new System.Drawing.Size(386, 225);
             this.designAlternativeDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn2
@@ -562,6 +564,7 @@
             this.button3.Size = new System.Drawing.Size(35, 24);
             this.button3.TabIndex = 26;
             this.button3.Text = "...";
+            this.toolTip1.SetToolTip(this.button3, "Select by image");
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -1083,6 +1086,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.btnCalc);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.btnAdd);
@@ -1988,6 +1992,14 @@
             this.label7.TabIndex = 23;
             this.label7.Text = "Best Design for Each Quality Criteria/Sub-Criteria";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(14, 328);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(384, 217);
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2054,6 +2066,7 @@
             this.groupBox9.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2201,6 +2214,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
